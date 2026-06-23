@@ -5,23 +5,29 @@
     .container {
         max-width: 96%;
     }
+
     .product-grid {
         grid-template-columns: repeat(3, 1fr);
     }
+
     .eq-products-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .eq-features-bar {
         flex-wrap: wrap;
         gap: 20px;
         justify-content: center;
     }
+
     .about-top {
         gap: 40px;
     }
+
     .benefits-grid {
         gap: 20px;
     }
+
     .services-wrapper {
         gap: 40px;
     }
@@ -29,13 +35,15 @@
 
 /* 2. Tablet (max-width: 992px) */
 @media (max-width: 992px) {
+
     /* Header e Navegação (Glassmorphism Menu) */
     .mobile-menu-btn {
         display: block;
     }
-    
+
     .contact-header {
-        display: none; /* Esconde no mobile para simplificar a interface */
+        display: none;
+        /* Esconde no mobile para simplificar a interface */
     }
 
     .nav {
@@ -45,8 +53,10 @@
         width: 300px;
         max-width: 80%;
         height: 100vh;
-        background: rgba(17, 24, 39, 0.85); /* Fundo escuro com transparência */
-        backdrop-filter: blur(12px); /* Efeito Glassmorphism */
+        background: rgba(17, 24, 39, 0.85);
+        /* Fundo escuro com transparência */
+        backdrop-filter: blur(12px);
+        /* Efeito Glassmorphism */
         -webkit-backdrop-filter: blur(12px);
         box-shadow: -5px 0 20px rgba(0, 0, 0, 0.3);
         display: flex;
@@ -88,12 +98,12 @@
         grid-template-columns: 1fr;
         text-align: center;
     }
-    
+
     .services-info {
         max-width: 800px;
         margin: 0 auto;
     }
-    
+
     .services-detailed-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -148,10 +158,11 @@
         grid-template-columns: 1fr;
         gap: 3rem;
     }
-    
+
     .laudos-info h2 {
         font-size: 2.2rem;
     }
+
 }
 
 /* 3. Celular (max-width: 768px) */
@@ -159,13 +170,13 @@
     .hero-content h2 {
         font-size: 2.2rem;
     }
-    
+
     .hero-container {
         min-height: auto;
         padding: 60px 0;
         text-align: center;
     }
-    
+
     .hero-features {
         justify-content: center;
         flex-wrap: wrap;
@@ -248,7 +259,8 @@
         gap: 20px;
     }
 
-    .copyright, .developer {
+    .copyright,
+    .developer {
         flex-direction: column;
         gap: 8px;
     }
@@ -266,7 +278,7 @@
         flex-direction: column;
         text-align: center;
     }
-    
+
     .cta-content {
         flex-direction: column;
     }
@@ -295,7 +307,9 @@
         font-size: 1.6rem;
     }
 
-    .btn-whatsapp, .btn-primary, .btn-catalog {
+    .btn-whatsapp,
+    .btn-primary,
+    .btn-catalog {
         width: 100%;
         justify-content: center;
     }
