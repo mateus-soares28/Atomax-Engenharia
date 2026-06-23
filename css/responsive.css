@@ -1,0 +1,302 @@
+/* --- RESPONSIVIDADE GERAL E UI/UX PREMIUM --- */
+
+/* 1. MacBook e Notebooks Menores (max-width: 1200px) */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 96%;
+    }
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .eq-products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .eq-features-bar {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    .about-top {
+        gap: 40px;
+    }
+    .benefits-grid {
+        gap: 20px;
+    }
+    .services-wrapper {
+        gap: 40px;
+    }
+}
+
+/* 2. Tablet (max-width: 992px) */
+@media (max-width: 992px) {
+    /* Header e Navegação (Glassmorphism Menu) */
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    .contact-header {
+        display: none; /* Esconde no mobile para simplificar a interface */
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 300px;
+        max-width: 80%;
+        height: 100vh;
+        background: rgba(17, 24, 39, 0.85); /* Fundo escuro com transparência */
+        backdrop-filter: blur(12px); /* Efeito Glassmorphism */
+        -webkit-backdrop-filter: blur(12px);
+        box-shadow: -5px 0 20px rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 999;
+        padding: 40px 20px;
+    }
+
+    .nav.active {
+        right: 0;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav a {
+        font-size: 1.2rem;
+        display: block;
+        padding: 10px 0;
+    }
+
+    /* Grids e Layouts */
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-wrapper {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .services-info {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .services-detailed-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service-card-detailed:last-child:nth-child(7) {
+        grid-column: 1 / -1;
+        text-align: center;
+        align-items: center;
+    }
+
+    .about-top {
+        grid-template-columns: 1fr;
+    }
+
+    .about-features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .rental-features-box {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-top {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-col:nth-child(2)::after {
+        display: none;
+    }
+
+    .eq-layout {
+        flex-direction: column;
+    }
+
+    .eq-sidebar {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .eq-bottom-cta {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .eq-bottom-cta .cta-left {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .laudos-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .laudos-info h2 {
+        font-size: 2.2rem;
+    }
+}
+
+/* 3. Celular (max-width: 768px) */
+@media (max-width: 768px) {
+    .hero-content h2 {
+        font-size: 2.2rem;
+    }
+    
+    .hero-container {
+        min-height: auto;
+        padding: 60px 0;
+        text-align: center;
+    }
+    
+    .hero-features {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-image {
+        opacity: 0.3;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .services-detailed-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .services-detailed .section-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .logo-showcase {
+        min-height: 350px;
+    }
+
+    .logo-showcase h3 {
+        font-size: 2.5rem;
+    }
+
+    .rental-features-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .rental-info-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .rental-cta-inline {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cta-inline-left {
+        flex-direction: column;
+    }
+
+    .rental-info-wrapper {
+        padding: 30px 20px;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
+
+    .footer-col::after {
+        display: none !important;
+    }
+
+    .bottom-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .copyright, .developer {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .cta-banner-index {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cta-left {
+        flex-direction: column;
+    }
+
+    .cta-banner {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .cta-content {
+        flex-direction: column;
+    }
+}
+
+/* 4. Celular Pequeno (max-width: 576px) */
+@media (max-width: 576px) {
+    .eq-products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .eq-feature-item {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .rental-features-box {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .section-header h2 {
+        font-size: 1.6rem;
+    }
+
+    .btn-whatsapp, .btn-primary, .btn-catalog {
+        width: 100%;
+        justify-content: center;
+    }
+}
