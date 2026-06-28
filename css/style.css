@@ -226,6 +226,14 @@ body {
   text-decoration: none;
 }
 
+.whatsapp-btn-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  flex-shrink: 0;
+}
+
 /* =========================================
    HERO SECTION 
    ========================================= */
@@ -927,9 +935,8 @@ body {
 .carousel-container {
   position: relative;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  min-height: 900px;
 }
 
 .carousel-slide {
@@ -937,7 +944,6 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
   display: flex;
   opacity: 0;
   visibility: hidden;
@@ -949,6 +955,7 @@ body {
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   overflow: hidden;
+  min-height: 750px;
 }
 
 .carousel-slide.active {
@@ -960,7 +967,8 @@ body {
 
 /* --- Área de Texto (Esquerda) --- */
 .slide-content {
-  width: 50%;
+  width: 55%;
+  flex-shrink: 0;
   padding: 60px;
   display: flex;
   align-items: center;
@@ -1082,42 +1090,32 @@ body {
 
 /* --- Área de Imagem (Direita) --- */
 .slide-image-area {
-  width: 80%;
-  position: absolute;
-  right: 0;
-  bottom: 20px;
-  height: 100%;
-  z-index: 1;
+  width: 45%;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+  margin-left: -5%;
 }
-/* .slide-image-area img {
+
+.slide-image-area img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center right;
-} */
-
-.slide-image-area,
-.projetos {
-  height: 80%;
-  width: 80%;
-  object-fit: cover;
-  object-position: right;
+  object-position: center;
+  display: block;
 }
 
-.slide-image-area,
-.consultoria {
-  height: 80%;
-  width: 80%;
-  object-fit: cover;
-  object-position: right;
+/* Classes específicas para ajuste fino por slide */
+.slide-image-area img.projetos {
+  object-position: center top;
 }
 
-.slide-image-area,
-.laudos {
-  height: 80%;
-  width: 80%;
-  object-fit: cover;
-  object-position: right;
+.slide-image-area img.consultoria {
+  object-position: center;
+}
+
+.slide-image-area img.laudos {
+  object-position: center;
 }
 
 /* Badge Flutuante */

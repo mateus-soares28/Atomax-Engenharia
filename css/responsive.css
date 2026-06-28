@@ -167,37 +167,23 @@
 
 /* 3. Celular (max-width: 768px) */
 @media (max-width: 768px) {
-    .hero-wrapper {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero h2 {
+    .hero-content h2 {
         font-size: 2.2rem;
     }
 
-    .hero-content {
-        max-width: 100%;
+    .hero-container {
+        min-height: auto;
+        padding: 60px 0;
+        text-align: center;
     }
 
-    .hero-features-grid {
+    .hero-features {
         justify-content: center;
         flex-wrap: wrap;
-    }
-
-    .hero-actions {
-        justify-content: center;
     }
 
     .hero-image {
-        max-width: 350px;
-        margin: 30px auto 0;
-    }
-
-    .hero-cards-container {
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: -20px;
+        opacity: 0.3;
     }
 
     .product-grid {
