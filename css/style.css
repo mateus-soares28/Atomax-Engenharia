@@ -616,7 +616,6 @@ body {
   }
 }
 
-
 @media (prefers-reduced-motion: reduce) {
   .product-track {
     animation: none;
@@ -1089,13 +1088,36 @@ body {
   bottom: 20px;
   height: 100%;
   z-index: 1;
-
 }
-.slide-image-area img {
+/* .slide-image-area img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center right;
+} */
+
+.slide-image-area,
+.projetos {
+  height: 80%;
+  width: 80%;
+  object-fit: cover;
+  object-position: right;
+}
+
+.slide-image-area,
+.consultoria {
+  height: 80%;
+  width: 80%;
+  object-fit: cover;
+  object-position: right;
+}
+
+.slide-image-area,
+.laudos {
+  height: 80%;
+  width: 80%;
+  object-fit: cover;
+  object-position: right;
 }
 
 /* Badge Flutuante */
