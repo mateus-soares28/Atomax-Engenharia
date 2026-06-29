@@ -927,6 +927,7 @@ body {
 }
 
 .services-detailed {
+ margin-top: 50px;
   padding: 80px 0;
   background-color: var(--color-bg-light);
   overflow: hidden;
@@ -968,16 +969,17 @@ body {
 
 /* --- Área de Texto (Esquerda) --- */
 .slide-content {
-  width: 55%;
-  flex-shrink: 0;
+  width: 50%;
+  flex: 0 0 50%;
   padding: 60px;
   display: flex;
   align-items: center;
   position: relative;
   z-index: 2;
   background: #fff;
-  clip-path: polygon(0 0, 100% 0, 92% 100%, 0% 100%);
+  clip-path: none;
   height: 100%;
+  box-sizing: border-box;
 }
 
 .slide-text-area {
@@ -1091,12 +1093,14 @@ body {
 
 /* --- Área de Imagem (Direita) --- */
 .slide-image-area {
-  width: 45%;
-  flex-shrink: 0;
+  width: 50%;
+  flex: 0 0 50%;
   position: relative;
   overflow: hidden;
-  margin-left: -5%;
+  margin-left: 0;
   height: 100%;
+  background: #f7f7f7;
+  border-radius: 0 16px 16px 0;
 }
 
 .slide-image-area img {
@@ -1105,19 +1109,7 @@ body {
   object-fit: cover;
   object-position: center;
   display: block;
-}
-
-/* Classes específicas para ajuste fino por slide */
-.slide-image-area img.projetos {
-  object-position: center top;
-}
-
-.slide-image-area img.consultoria {
-  object-position: center;
-}
-
-.slide-image-area img.laudos {
-  object-position: center;
+  border-radius: 0 16px 16px 0;
 }
 
 /* Badge Flutuante */

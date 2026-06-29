@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function resetAutoPlay() {
     clearInterval(autoPlayInterval);
-    autoPlayInterval = setInterval(nextSlide, 6000); // Roda a cada 6 segundos
+    autoPlayInterval = setInterval(nextSlide, 3000); // Roda a cada 6 segundos
   }
 
   // Event Listeners dos Botões
