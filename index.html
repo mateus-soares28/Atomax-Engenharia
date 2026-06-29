@@ -54,20 +54,18 @@
       </nav>
 
       <div class="contact-header">
-        <a href="https://wa.me/5547999985684" target="_blank" class="btn btn-primary"
-          style="padding: 10px 24px; font-size: 0.95rem; border-radius: 55px;">
-          <img src="./assets/img/whatsapp-icon.svg" alt="WhatsApp" class="whatsapp-btn-icon">
-          Entrar em contato
+        <a href="https://wa.me/5547999985684" target="_blank">
+          <img src="./assets/img/whatsapp-original.svg" alt="WhatsApp" style="height: 40px; width: auto;">
         </a>
       </div>
     </div>
   </header>
 
-  
 
-  <section class="services-detailed">
-    <div class="container">
-      <div class="carousel-container">
+
+  <section class="services-detailed" style="height: 100vh; display: flex; align-items: center; padding-top: 80px; overflow: hidden;">
+    <div class="container" style="height: 100%; display: flex; flex-direction: column; justify-content: center;">
+      <div class="carousel-container" style="height: 100%; max-height: 80vh; display: flex; flex-direction: column;">
 
         <!-- Slide 1: Projetos (Baseado na imagem) -->
         <div class="carousel-slide active" data-index="0">
@@ -149,7 +147,7 @@
             <div class="slide-text-area">
               <div class="slide-header">
                 <span class="label-line"></span>
-                <span class="label">SERVIÇOS</span>
+                <span class="label">LAUDOS, MEDIÇÕES E ESTUDOS</span>
               </div>
               <h2>Laudos, medições e estudos que geram segurança, economia e conformidade.</h2>
               <p class="description">
@@ -186,7 +184,7 @@
             <div class="slide-text-area">
               <div class="slide-header">
                 <span class="label-line"></span>
-                <span class="label">SERVIÇOS ESPECIALIZADOS</span>
+                <span class="label">GERENCIAMENTO, SUPERVISÃO E FISCALIZAÇÃO DE OBRAS</span>
               </div>
               <h2>Gerenciamento, supervisão e fiscalização de obras com excelência e responsabilidade.</h2>
               <p class="description">
@@ -223,7 +221,7 @@
             <div class="slide-text-area">
               <div class="slide-header">
                 <span class="label-line"></span>
-                <span class="label">SERVIÇOS ESPECIALIZADOS</span>
+                <span class="label">MANUTEÇÃO ELÉTRICA</span>
               </div>
               <h2>Manutenção elétrica e sistema preventivo para máxima segurança e continuidade.</h2>
               <p class="description">
@@ -262,7 +260,7 @@
             <div class="slide-text-area">
               <div class="slide-header">
                 <span class="label-line"></span>
-                <span class="label">SERVIÇOS ESPECIALIZADOS</span>
+                <span class="label">PERÍCIA TÉCNICA</span>
               </div>
               <h2>Perícia técnica com precisão, imparcialidade e fundamentação.</h2>
               <p class="description">
@@ -300,7 +298,7 @@
             <div class="slide-text-area">
               <div class="slide-header">
                 <span class="label-line"></span>
-                <span class="label">SERVIÇOS ESPECIALIZADOS</span>
+                <span class="label">TREINAMENTOS</span>
               </div>
               <h2>Treinamentos que transformam conhecimento em segurança, eficiência e resultados.</h2>
               <p class="description">
@@ -526,9 +524,10 @@
 
 
 
-  <section class="about-company" id="empresa">
-    <div class="container">
-      <div class="about-top">
+  <section class="about-company" id="empresa" style="position: relative; overflow: hidden;">
+    <img src="./assets/img/logo-atomax-maior.png" alt="" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0.05; width: 90%; max-width: 800px; z-index: 0; pointer-events: none;">
+    <div class="container" style="position: relative; z-index: 1;">
+      <div class="about-top" style="grid-template-columns: 1fr;">
         <div class="about-text">
           <span class="label">SOBRE A ATOMAX</span>
           <h2>
@@ -573,12 +572,6 @@
           </p>
         </div>
 
-        <div class="about-image-box">
-          <div class="logo-showcase">
-            <img class="logo-maior" src="./assets/img/logo-atomax-maior.png" alt="">
-
-          </div>
-        </div>
       </div>
 
       <div class="about-features-grid">
