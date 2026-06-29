@@ -2238,18 +2238,6 @@ body {
   transform: scale(0.98);
 }
 
-/* Ajuste caso queira o botão ocupando a largura total abaixo da tag */
-@media (max-width: 480px) {
-  .eq-card-actions {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .btn-add-cart {
-    width: 100%;
-    justify-content: center;
-  }
-}
 
 /* --- Carrinho de Solicitacao --- */
 .eq-cart-widget {
