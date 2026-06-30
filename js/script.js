@@ -134,3 +134,5 @@ document.addEventListener('DOMContentLoaded', () => {
   updateCarousel(currentSlide);
   resetAutoPlay();
 });
+
+
