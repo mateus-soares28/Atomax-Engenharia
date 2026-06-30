@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <title>Detalhes do Equipamento - Atomax</title>
+
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+  <section class="eq-detail-section">
+    <div class="container">
+      <div class="eq-breadcrumb">
+        <a href="index.html">Home</a> > 
+        <a href="equipamentos.html">Equipamentos</a> > 
+        <span id="breadcrumb-nome">Carregando...</span>
+      </div>
+
+      <div class="eq-detail-layout">
+        <div class="eq-detail-image">
+          <img id="detalhe-img" src="" alt="Imagem do Equipamento" />
+        </div>
+
+        <div class="eq-detail-info">
+          <span id="detalhe-categoria" class="eq-tag"></span>
+          <h2 id="detalhe-nome">Carregando...</h2>
+          
+          <div class="eq-card-dropdowns">
+            <details class="eq-details" open>
+              <summary>Informações <i class="fa-solid fa-chevron-down"></i></summary>
+              <div class="details-content">
+                <p id="detalhe-informacoes"></p>
+              </div>
+            </details>
+            
+            <details class="eq-details">
+              <summary>Especificações <i class="fa-solid fa-chevron-down"></i></summary>
+              <div class="details-content">
+                <p id="detalhe-especificacoes"></p>
+              </div>
+            </details>
+            
+            <details class="eq-details">
+              <summary>Manual <i class="fa-solid fa-chevron-down"></i></summary>
+              <div class="details-content">
+                <a id="detalhe-manual" href="#" target="_blank" class="btn-manual">
+                  <i class="fa-solid fa-file-pdf"></i> Baixar Manual
+                </a>
+              </div>
+            </details>
+          </div>
+
+          <button id="detalhe-add-cart" class="btn-add-cart">
+            <i class="fa-solid fa-cart-shopping"></i> Adicionar ao orçamento
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="./js/detalhe.js"></script>
+</body>
+</html>

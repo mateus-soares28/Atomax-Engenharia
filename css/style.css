@@ -2896,3 +2896,127 @@ body {
   max-width: 600px;
   margin: 0 auto;
 }
+
+/* =========================================
+   BOTOES DO CARD RESUMIDO (Catálogo)
+   ========================================= */
+.eq-card-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Separa os botões */
+  gap: 10px;
+  margin-top: 20px;
+  border-top: 1px solid #f3f4f6; /* Linha sutil para separar as ações */
+  padding-top: 15px;
+}
+
+/* Novo botão "Ver Detalhes" */
+.btn-details {
+  background-color: transparent;
+  color: var(--color-primary-hover);
+  border: 1px solid var(--color-primary);
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 22px;
+  text-decoration: none;
+  transition: all var(--transition-speed);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-details:hover {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Ajuste no botão de adicionar ao carrinho para alinhar com o Ver Detalhes */
+.eq-card-actions .btn-add-cart {
+  margin-top: 0; /* Remove a margem do código antigo para alinhar no flexbox */
+  padding: 9px 16px; /* Deixa um pouco mais encorpado */
+}
+
+
+/* =========================================
+   PÁGINA ÚNICA DE DETALHES (detalhe-equipamento.html)
+   ========================================= */
+.eq-detail-section {
+  padding: 130px 0 80px; /* Padding superior maior por conta do Header fixo */
+  background-color: var(--color-light-bg);
+  min-height: calc(100vh - 200px);
+}
+
+/* Layout Principal em Grid */
+.eq-detail-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr; /* Lado direito um pouco maior para o texto */
+  gap: 50px;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04); /* Mesma sombra dos seus cards */
+  margin-top: 20px;
+  border: 1px solid var(--color-border);
+}
+
+/* Área da Imagem */
+.eq-detail-image {
+  background-color: #f9fafb; /* Fundo levemente cinza para destacar o equipamento */
+  border-radius: 12px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 400px;
+  border: 1px solid #f3f4f6;
+}
+
+.eq-detail-image img {
+  max-width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.05)); /* Dá profundidade ao PNG/WebP */
+}
+
+/* Área de Informações */
+.eq-detail-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.eq-detail-info #detalhe-categoria {
+  align-self: flex-start;
+  margin-bottom: 5px;
+}
+
+.eq-detail-info h2 {
+  font-size: 2.2rem;
+  color: var(--color-dark-bg);
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* Afastamento dos Dropdowns na página de detalhes */
+.eq-detail-info .eq-card-dropdowns {
+  margin: 10px 0 25px 0;
+}
+
+/* Botão de Adicionar ao Carrinho Gigante na página de detalhes */
+.eq-detail-info .btn-add-cart {
+  padding: 16px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 55px;
+  width: fit-content;
+  box-shadow: 0 4px 15px rgba(255, 208, 91, 0.3); /* Sombra amarela suave */
+}
+
+.eq-detail-info .btn-add-cart:hover {
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.4);
+}
+
