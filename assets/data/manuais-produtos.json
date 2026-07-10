@@ -1,0 +1,240 @@
+{
+  "analisador-fluke-435-ii": [
+    {
+      "titulo": "Analisador Energia Fluke 435 Series 2 Dados Técnicos",
+      "url": "./assets/Produtos-manuais/1 - Analisador de Energia Modelo 435-Serie 2/1 - Manuais/Analisador Energia Fluke 435 Series 2 - Dados Técnicos/Analisador Energia Fluke 435 Series 2 - Dados Técnicos.PDF"
+    },
+    {
+      "titulo": "Analisador Energia Fluke 435 Series 2 Manual do Manutenção",
+      "url": "./assets/Produtos-manuais/1 - Analisador de Energia Modelo 435-Serie 2/1 - Manuais/Analisador Energia Fluke 435 Series 2 - Manual do Manutenção/Analisador Energia Fluke 435 Series 2 - Manual do Manutenção.pdf"
+    },
+    {
+      "titulo": "Analisador Energia Fluke 435 Series 2 Manual do Usuário",
+      "url": "./assets/Produtos-manuais/1 - Analisador de Energia Modelo 435-Serie 2/1 - Manuais/Analisador Energia Fluke 435 Series 2 - Manual do Usuário/Analisador Energia Fluke 435 Series 2 - Manual do Usuário.pdf"
+    },
+    {
+      "titulo": "Analisador Energia Fluke 435 Series 2 Suplemento do Manual do Usuário",
+      "url": "./assets/Produtos-manuais/1 - Analisador de Energia Modelo 435-Serie 2/1 - Manuais/Analisador Energia Fluke 435 Series 2 - Suplemento do Manual do Usuário/Analisador Energia Fluke 435 Series 2 - Suplemento do Manual do Usuário.pdf"
+    },
+    {
+      "titulo": "Bateria BP290 Folha de Instrução",
+      "url": "./assets/Produtos-manuais/1 - Analisador de Energia Modelo 435-Serie 2/1 - Manuais/Bateria BP290 - Folha de Instrução/Bateria BP290 - Folha de Instrução.pdf"
+    },
+    {
+      "titulo": "Bateria BP290 Suplemento da Folha de Instrução",
+      "url": "./assets/Produtos-manuais/1 - Analisador de Energia Modelo 435-Serie 2/1 - Manuais/Bateria BP290 - Suplemento da Folha de Instrução/Bateria BP290 - Suplemento da Folha de Instrução.pdf"
+    },
+    {
+      "titulo": "Cabos de Testes TLS430 Dados Técnicos",
+      "url": "./assets/Produtos-manuais/1 - Analisador de Energia Modelo 435-Serie 2/1 - Manuais/Cabos de Testes TLS430 - Dados Técnicos/Cabos de Testes TLS430 - Dados Técnicos.pdf"
+    },
+    {
+      "titulo": "Carregador de Bateria BC 190 808 Folha de Dados",
+      "url": "./assets/Produtos-manuais/1 - Analisador de Energia Modelo 435-Serie 2/1 - Manuais/Carregador de Bateria BC 190_808 - Folha de Dados/Carregador de Bateria BC 190_808 - Folha de Dados.pdf"
+    },
+    {
+      "titulo": "Software Power Log Manual Operacional",
+      "url": "./assets/Produtos-manuais/1 - Analisador de Energia Modelo 435-Serie 2/1 - Manuais/Software Power Log - Manual Operacional/Software Power Log - Manual Operacional.pdf"
+    },
+    {
+      "titulo": "Software Power Log Suplemento do Manual Operacional",
+      "url": "./assets/Produtos-manuais/1 - Analisador de Energia Modelo 435-Serie 2/1 - Manuais/Software Power Log - Suplemento do Manual Operacional/Software Power Log - Suplemento do Manual Operacional.pdf"
+    },
+    {
+      "titulo": "Sonda de Corrente i430 Flexi TF Folha de Instrução",
+      "url": "./assets/Produtos-manuais/1 - Analisador de Energia Modelo 435-Serie 2/1 - Manuais/Sonda de Corrente i430-Flexi-TF - Folha de Instrução/Sonda de Corrente i430-Flexi-TF - Folha de Instrução.pdf"
+    }
+  ],
+  "analisador-re-7000-embrasul": [
+    {
+      "titulo": "Analisador Energia Embrasul RE 7000 Apostila Treinamento v08",
+      "url": "./assets/Produtos-manuais/2 - Analisador de Energia Modelo RE-7000/1 - Manuais/Analisador Energia Embrasul RE-7000 - Apostila Treinamento/Analisador Energia Embrasul RE-7000 - Apostila Treinamento_v08.pdf"
+    },
+    {
+      "titulo": "Analisador Energia Embrasul RE 7000 Catalogo Técnico v11 2022 1",
+      "url": "./assets/Produtos-manuais/2 - Analisador de Energia Modelo RE-7000/1 - Manuais/Analisador Energia Embrasul RE-7000 - Catálogo Técnico/Analisador Energia Embrasul RE-7000 - Catalogo Técnico_v11_2022-1.pdf"
+    },
+    {
+      "titulo": "Analisador Energia Embrasul RE 7000 Manual de Instalação e Operação RV10",
+      "url": "./assets/Produtos-manuais/2 - Analisador de Energia Modelo RE-7000/1 - Manuais/Analisador Energia Embrasul RE-7000 - Manual de Instalação e Operação/Analisador Energia Embrasul RE-7000 - Manual de Instalação e Operação_RV10.pdf"
+    },
+    {
+      "titulo": "Configuração por rede",
+      "url": "./assets/Produtos-manuais/2 - Analisador de Energia Modelo RE-7000/1 - Manuais/Configuração para baixar via IP/Configuração por rede.pdf"
+    },
+    {
+      "titulo": "Ips",
+      "url": "./assets/Produtos-manuais/2 - Analisador de Energia Modelo RE-7000/1 - Manuais/Configuração para baixar via IP/Ips.docx"
+    },
+    {
+      "titulo": "Software ANL7000 Manual de Operação RV2",
+      "url": "./assets/Produtos-manuais/2 - Analisador de Energia Modelo RE-7000/1 - Manuais/Software ANL7000 - Manual de Operação/Software ANL7000 - Manual de Operação_RV2.pdf"
+    },
+    {
+      "titulo": "Sonda de Corrente TI SLIM 3000 6000A Folha de Instrução",
+      "url": "./assets/Produtos-manuais/2 - Analisador de Energia Modelo RE-7000/1 - Manuais/Sonda de Corrente TI-SLIM 3000_6000A - Folha de Instrução/Sonda de Corrente TI-SLIM 3000_6000A - Folha de Instrução.pdf"
+    }
+  ],
+  "hipot-120kv-5ma-kv-tester": [
+    {
+      "titulo": "Hipot 120kV 5mA Modelo ZC 540 120kV5mA Manual do Usuário",
+      "url": "./assets/Produtos-manuais/3 - Hipot 120kV 5mA Modelo ZC-540-120kV5mA/1 -Manuais/Hipot 120kV 5mA Modelo ZC-540-120kV5mA - Manual do Usuário/Hipot 120kV 5mA Modelo ZC-540-120kV5mA - Manual do Usuário.pdf"
+    },
+    {
+      "titulo": "Hipot 120kV 5mA Modelo ZC 540 120kV5mA Vídeo Explicativo",
+      "url": "https://www.youtube.com/watch?v=8X5PXlJbxqE"
+    }
+  ],
+  "micro-ohmimetro-digital-microhm-200-instrum": [
+    {
+      "titulo": "4 Micro Ohmímetro Digital 200A Modelo MICROHM 200 Manual de Operação",
+      "url": "./assets/Produtos-manuais/4 - Micro-Ohmímetro Digital 200A Modelo MICROHM-200/1 - Manuais/4 - Micro-Ohmímetro Digital 200A Modelo MICROHM-200 - Manual de Operação.pdf"
+    }
+  ],
+  "miliohmimetro-digital-hmdd-1-highmed": [
+    {
+      "titulo": "Miliohmimetro Digital 1,2A HMMD 1 Folha de Dados",
+      "url": "./assets/Produtos-manuais/5 - Miliohmimetro Digital 1,2A  + 100mts cabo teste Modelo HMMD-1/1 - Manuais/Miliohmimetro Digital 1,2A  HMMD-1 - Folha de Dados.pdf"
+    },
+    {
+      "titulo": "Miliohmimetro Digital 1,2A HMMD 1 Manual do Usuário",
+      "url": "./assets/Produtos-manuais/5 - Miliohmimetro Digital 1,2A  + 100mts cabo teste Modelo HMMD-1/1 - Manuais/Miliohmimetro Digital 1,2A  HMMD-1 - Manual do Usuário.pdf"
+    }
+  ],
+  "camera-termografica-ti-10-fluke": [
+    {
+      "titulo": "Câmera Termográfica Modelo Ti10 Dados Técnicos",
+      "url": "./assets/Produtos-manuais/6 - Câmera Termográfica Modelo Ti10/1 - Manuais/Câmera Termográfica Modelo Ti10 - Dados Técnicos/Câmera Termográfica Modelo Ti10 - Dados Técnicos.pdf"
+    },
+    {
+      "titulo": "Câmera Termográfica Modelo Ti10 Manual do Usuário",
+      "url": "./assets/Produtos-manuais/6 - Câmera Termográfica Modelo Ti10/1 - Manuais/Câmera Termográfica Modelo Ti10 - Manual do Usuário/Câmera Termográfica Modelo Ti10 - Manual do Usuário.pdf"
+    }
+  ],
+  "terrometro-digital-alicate-et-4310-minipa": [
+    {
+      "titulo": "Terrometro Digital Tipo Alicate Modelo ET 4310 Manual de Instrução",
+      "url": "./assets/Produtos-manuais/7 - Terrometro Digital Tipo Alicate Modelo ET-4310/1 - Manuais/Terrometro Digital Tipo Alicate Modelo ET-4310 - Manual de Instrução/Terrometro Digital Tipo Alicate Modelo ET-4310 - Manual de Instrução.pdf"
+    }
+  ],
+  "terrometro-digital-4-hastes-tmd-20kw-instrum": [
+    {
+      "titulo": "Terrometro Digital c 4 Hastes Modelo TMD 20KW Manual de Operação",
+      "url": "./assets/Produtos-manuais/8 - Terrometro Digital c 4 Hastes Modelo TMD-20KW/1 - Manuais/Terrometro Digital c 4 Hastes Modelo TMD-20KW - Manual de Operação.pdf"
+    }
+  ],
+  "terrometro-digital-2-hastes-mtr-1520d-minipa": [
+    {
+      "titulo": "Terrometro Digital c 2 Hastes Modelo MTR 1520D Manual de Instr",
+      "url": "./assets/Produtos-manuais/9 - Terrometro Digital c 2 Hastes Modelo MTR-1520D/1 - Manuais/Terrometro Digital c 2 Hastes Modelo MTR-1520D - Manual de Instr.pdf"
+    },
+    {
+      "titulo": "MTR 1530 1101 BR",
+      "url": "./assets/Produtos-manuais/9 - Terrometro Digital c 2 Hastes Modelo MTR-1530/1 - Manuais/Terrometro Digital c 2 Hastes Modelo MTR-15230 - Manual de Instrução/MTR-1530-1101-BR.pdf"
+    }
+  ],
+  "terrometro-digital-sem-hastes-tpa-2000-allnec": [
+    {
+      "titulo": "10 Terrometro Digital s Hastes Modelo TPA 2000 Manual",
+      "url": "./assets/Produtos-manuais/10 - Terrometro Digital s Hastes Modelo TPA-2000/1 - Manuais/10 - Terrometro Digital s Hastes Modelo TPA-2000 - Manual.pdf"
+    }
+  ],
+  "decibelimetro-ins-1385-instrusul": [
+    {
+      "titulo": "Decibelímetro 30 a 130 dBA Modelo INS 1385 Manual de Instrução",
+      "url": "./assets/Produtos-manuais/11 - Decibelímetro 30 a 130 dBA Modelo INS-1385/1 - Manuais/Decibelímetro 30 a 130 dBA Modelo INS-1385 - Manual de Instrução.pdf"
+    }
+  ],
+  "thermo-luximetro-ins-81-instrusul": [
+    {
+      "titulo": "Thermo Luxímetro 0 a 200.000 lux 9,9ºC a 49,9ºC Modelo INS 81 Manual de Instrução",
+      "url": "./assets/Produtos-manuais/12 - Thermo-Luxímetro 0 a 200.000 lux  - 9,9ºC a 49,9ºC Modelo INS-1381/1 - Manuais/Thermo-Luxímetro 0 a 200.000 lux  - 9,9ºC a 49,9ºC Modelo INS-81 - Manual de Instrução.pdf"
+    }
+  ],
+  "megohmetro-digital-1kv-hmmg-1-highmed": [
+    {
+      "titulo": "Catalogo tecnico",
+      "url": "./assets/Produtos-manuais/13 - Mêgohmetro Digital 1000V Modelo HMMG-1/1 - Manuais/Catalogo tecnico.pdf"
+    },
+    {
+      "titulo": "HMMG Séries",
+      "url": "./assets/Produtos-manuais/13 - Mêgohmetro Digital 1000V Modelo HMMG-1/1 - Manuais/HMMG Séries.pdf"
+    },
+    {
+      "titulo": "MANUAL DO HMMG 5,10,15, 20kV",
+      "url": "./assets/Produtos-manuais/13 - Mêgohmetro Digital 1000V Modelo HMMG-1/1 - Manuais/MANUAL DO HMMG-5,10,15, 20kV.pdf"
+    }
+  ],
+  "megohmetro-digital-15kv-hmmg-15-highmed": [
+    {
+      "titulo": "HMMG Séries",
+      "url": "./assets/Produtos-manuais/14 - Mêgohmetro Digital 15000V Modelo HMMG-15/1 - Manuais/HMMG Séries.pdf"
+    },
+    {
+      "titulo": "MANUAL DO HMMG 5,10,15, 20kV",
+      "url": "./assets/Produtos-manuais/14 - Mêgohmetro Digital 15000V Modelo HMMG-15/1 - Manuais/MANUAL DO HMMG-5,10,15, 20kV.pdf"
+    }
+  ],
+  "megohmetro-analogico-mg-2010-icel": [
+    {
+      "titulo": "Mêgohmetro Analógico Modelo MG 2010 Manual de Instrução",
+      "url": "./assets/Produtos-manuais/15 - Mêgohmetro Analógico Modelo MG-2010/1 - Manuais/Mêgohmetro Analógico Modelo MG-2010 - Manual de Instrução.pdf"
+    }
+  ],
+  "frequencimetro-fasimetro-mfa-850-minipa": [
+    {
+      "titulo": "Sequêncimetro e Indicador de Fase Modelo MFA 850 Manual de Instrução",
+      "url": "./assets/Produtos-manuais/16 - Sequêncimetro e Indicador de Fase Modelo MFA-850/1 - Manuais/Sequêncimetro e Indicador de Fase Modelo MFA-850 - Manual de Instrução.pdf"
+    }
+  ],
+  "alicate-amperimetro-302-plus-fluke": [
+    {
+      "titulo": "Alicate Multitest analisador Modelo 302+ Dados Técnicos",
+      "url": "./assets/Produtos-manuais/17 - Alicate Multitest analisador Modelo 302+/1 - Manuais/Alicate Multitest analisador Modelo 302+ - Dados Técnicos.PDF"
+    },
+    {
+      "titulo": "Alicate Multitest analisador Modelo 302+ Manual do Usuário",
+      "url": "./assets/Produtos-manuais/17 - Alicate Multitest analisador Modelo 302+/1 - Manuais/Alicate Multitest analisador Modelo 302+ - Manual do Usuário.pdf"
+    }
+  ],
+  "medidor-relacao-transformacao-hmttr-2000-highmed": [
+    {
+      "titulo": "HMTTR 2000 Folha de dados",
+      "url": "./assets/Produtos-manuais/18 - Medidor de Relação de Transformação Modelo HMTTR-2000/1 - Manuais/HMTTR 2000 - Folha de dados.pdf"
+    },
+    {
+      "titulo": "manual de operacao medidor de relaao em transformadores modelo hmttr 2000e highmed",
+      "url": "./assets/Produtos-manuais/18 - Medidor de Relação de Transformação Modelo HMTTR-2000/1 - Manuais/manual-de-operacao-medidor-de-relaao-em-transformadores-modelo-hmttr-2000e-highmed.pdf"
+    }
+  ],
+  "conjunto-aterramento-temporario": [
+    {
+      "titulo": "Ficha Técnica Aterramento Temporário até 34kV NR 10",
+      "url": "./assets/Produtos-manuais/19 - Conjunto de Aterramento Temporário até 34kV NR-10/1 - Manuais/Ficha Técnica Aterramento Temporário até 34kV NR-10.pdf"
+    }
+  ],
+  "localizador-detector-disjuntor-circuito-eletrico": [
+    {
+      "titulo": "Manual Localizador Detector Disjuntor Circuito Elétrico Modelo EM419A",
+      "url": "./assets/Produtos-manuais/20 - Localizador Detector Disjuntor Circuito Elétrico Modelo EM419A/1 - Manuais/Manual Localizador Detector Disjuntor Circuito Elétrico Modelo EM419A.pdf"
+    }
+  ],
+  "maleta-calibracao-rele-zcar-802": [
+    {
+      "titulo": "Ingles ZCAR 802 3 Phase Relay Tester New 1",
+      "url": "./assets/Produtos-manuais/22 - Maleta de Calibração Relé/Manuais/Ingles - ZCAR-802 3 Phase Relay Tester-New-1.pdf"
+    },
+    {
+      "titulo": "Manual de operação Ingles 3 relay protective test system ZCAR 802",
+      "url": "./assets/Produtos-manuais/22 - Maleta de Calibração Relé/Manuais/Manual de operação Ingles - 3 relay protective test system ZCAR-802.pdf"
+    },
+    {
+      "titulo": "Manual de operação Português Sistema de teste de proteção de relés trifasico ZCAR 802",
+      "url": "./assets/Produtos-manuais/22 - Maleta de Calibração Relé/Manuais/Manual de operação Português - Sistema de teste de proteção de relés trifasico ZCAR-802.pdf"
+    },
+    {
+      "titulo": "Português ZCAR 802 3 Phase Relay Tester New 1 1",
+      "url": "./assets/Produtos-manuais/22 - Maleta de Calibração Relé/Manuais/Português - ZCAR-802 3 Phase Relay Tester-New-1-1.pdf"
+    }
+  ]
+}

@@ -208,5 +208,15 @@
     "informacoes": "O Detector de Tensão por Contato é um equipamento portátil projetado para medir tensões elétricas em sistemas de média e alta tensão. Com tecnologia avançada, permite realizar medições precisas e seguras, garantindo o funcionamento adequado dos equipamentos e a segurança dos trabalhadores.",
     "especificacoes": "Especificações técnicas sob consulta.",
     "manual": "#"
+  },
+  {
+    "id": "maleta-calibracao-rele-zcar-802",
+    "nome": "MALETA DE CALIBRACAO RELE - ZCAR-802",
+    "categoria": "Teste Eletrico de Reles",
+    "imagem": "./assets/img/background-aparelhos.png",
+    "descricaoCurta": "Sistema trifasico para testes e calibracao de protecao de reles.",
+    "informacoes": "A Maleta de Calibracao de Rele ZCAR-802 e um sistema de teste de protecao de reles trifasico, indicado para ensaios, calibracoes e verificacoes em dispositivos de protecao eletrica. O equipamento auxilia equipes tecnicas em testes de operacao, desempenho e confiabilidade de reles de protecao.",
+    "especificacoes": "Modelo ZCAR-802. Sistema trifasico para teste de protecao de reles. Especificacoes tecnicas adicionais sob consulta.",
+    "manual": "#"
   }
 ]

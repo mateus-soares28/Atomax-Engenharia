@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const whatsappPhone = '5547999985684';
     const cartStorageKey = 'atomaxCatalogCart';
+    const openCartStorageKey = 'atomaxOpenCart';
     const cartToggle = document.querySelector('.eq-cart-toggle');
     const cartPanel = document.querySelector('.eq-cart-panel');
     const cartClose = document.querySelector('.eq-cart-close');
@@ -221,5 +222,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     renderCart();
-});
 
+    if (localStorage.getItem(openCartStorageKey) === '1') {
+        localStorage.removeItem(openCartStorageKey);
+        openCart();
+    }
+});

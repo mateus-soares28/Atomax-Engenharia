@@ -2838,19 +2838,35 @@ body {
   margin-bottom: 0 !important;
 }
 
+.manuals-list {
+  display: grid;
+  gap: 10px;
+}
+
 .btn-manual {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 8px;
   color: #ef4444;
+  background-color: #fff7f7;
+  border: 1px solid #fee2e2;
+  border-radius: 10px;
+  padding: 10px 12px;
   text-decoration: none;
   font-weight: 600;
   font-size: 0.9rem;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
 }
 
 .btn-manual:hover {
   color: #dc2626;
+  border-color: #fecaca;
+  transform: translateY(-1px);
+}
+
+.manuals-empty {
+  color: #6b7280;
+  font-size: 0.9rem;
 }
 
 @keyframes detailsFade {
