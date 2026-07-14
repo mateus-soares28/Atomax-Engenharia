@@ -6,7 +6,7 @@
     "imagem": "./assets/img/ANALISADOR DE ENERGIA  MODELO 435 II - FLUKE.webp",
     "descricaoCurta": "Equipamento avançado para análise de energia e qualidade, com alta segurança operacional.",
     "informacoes": "Equipamento avançado para análise de energia e qualidade de energia, com alta segurança operacional (600 V CAT IV / 1000 V CAT III). Permite medições simultâneas das três fases e neutro utilizando sondas de corrente flexíveis, ideais para espaços reduzidos. Conta com registro automático de dados...",
-    "especificacoes": "Especificações técnicas sob consulta.",
+    "especificacoes": "Analisador trifásico de qualidade de energia com 4 canais de tensão e 4 canais de corrente. Categoria de segurança 600 V CAT IV / 1000 V CAT III. Mede tensão, corrente, frequência, potência ativa/reativa/aparente, fator de potência, energia, desequilíbrio, flicker, transientes, harmônicas e inter-harmônicas. Registro automático de eventos e tendências, captura de formas de onda e uso com sondas de corrente flexíveis iFlex para medições em painéis e barramentos.",
     "manual": "./assets/pdf/Fluke-434-II435-II437-II-Manual-do-Usuario.pdf"
   },
   {
@@ -16,7 +16,7 @@
     "imagem": "./assets/img/ANALISADOR DE ENERGIA  MODELO RE-7000 - EMBRASUL.webp",
     "descricaoCurta": "Equipamento de alta precisão para análise e monitoramento da qualidade de energia elétrica.",
     "informacoes": "Equipamento de alta precisão para análise e monitoramento da qualidade de energia elétrica, capaz de medir simultaneamente quatro canais de corrente e quatro canais de tensão. Possui aquisição de dados em 16 bits, permitindo medições detalhadas de grandezas elétricas, harmônicas, flicker e perturbações rápidas. Atende aos requisitos do PRODIST Módulo 8 da ANEEL, conta com amplo display gráfico, instalação simplificada, configuração modular e medição bidirecional. Ideal para diagnósticos, auditorias e monitoramento avançado de sistemas elétricos.",
-    "especificacoes": "Especificações técnicas sob consulta.",
+    "especificacoes": "Analisador e registrador de qualidade de energia com 4 entradas de tensão e 4 entradas de corrente. Conversão A/D de 16 bits, medição bidirecional e registro de grandezas elétricas em sistemas monofásicos, bifásicos e trifásicos. Mede tensão, corrente, potência, energia, fator de potência, frequência, desequilíbrio, harmônicas, flicker, afundamentos, elevações e interrupções. Aplicável a campanhas de medição conforme requisitos do PRODIST Módulo 8.",
     "manual": "./assets/pdf/Manual-RE-7000.pdf"
   },
   {
@@ -26,7 +26,7 @@
     "imagem": "./assets/img/HIPOT 120KV 5MA - MODELO ZC-450-120KV5MA - KV TESTER.webp",
     "descricaoCurta": "Equipamento desenvolvido para testes de alta tensão em sistemas elétricos, ideal para avaliação de para-raios e transformadores.",
     "informacoes": "Equipamento desenvolvido para testes de alta tensão em sistemas elétricos, sendo ideal para avaliação de para-raios, cabos de média tensão, transformadores, geradores e outros equipamentos. Utiliza tecnologia avançada com modulação PWM e dispositivos IGBT de alta frequência, garantindo maior eficiência, estabilidade e precisão nas medições. Possui ampla faixa de saída de tensão, excelente controle de regulagem e baixa margem de erro, proporcionando resultados confiáveis para ensaios de tensão contínua e corrente de fuga em aplicações industriais e concessionárias de energia.",
-    "especificacoes": "Especificações técnicas sob consulta.",
+    "especificacoes": "Conjunto de ensaio Hipot em tensão contínua com saída ajustável até 120 kV e corrente máxima de 5 mA. Indicado para ensaios de isolação, corrente de fuga e suportabilidade dielétrica em para-raios, cabos, transformadores, geradores, motores e equipamentos de média/alta tensão. Utiliza controle eletrônico PWM com IGBT, medição de tensão e corrente de fuga, proteção contra sobrecorrente e ajuste gradual da tensão de ensaio.",
     "manual": "#"
   },
   {
@@ -36,7 +36,7 @@
     "imagem": "./assets/img/MICRO-OHMÍMETRO DIGITAL 200A  MODELO MICROHM-200 - INSTRUM.webp",
     "descricaoCurta": "Instrumento portátil e robusto para medição de baixas resistências com alcance entre 0.1 micro-ohms até 20 ohms e correntes até 200 A.",
     "informacoes": "O Micro-Ohmímetro e Ponte Kelvin Digital é um instrumento portátil e robusto para o uso em laboratório e/ou no campo, Utiliza método de Kelvin para Medição Faz a leitura direta de baixas resistências com alcance entre 0.1 micro-ohms até 20 ohms e correntes de 10 mA até 200 A. Montado em uma maleta portátil e robusta. Resistência de contato (de disjuntores, chaves em geral, conectores) Resistência elétrica (de condutores em geral, fios e cabos, barramentos, fusíveis) Bobinados (transformadores, motores elétricos)",
-    "especificacoes": "Especificações técnicas sob consulta.",
+    "especificacoes": "Micro-ohmímetro digital com método Kelvin a 4 fios para baixas resistências. Faixa de medição de aproximadamente 0,1 micro-ohm até 20 ohms, com correntes de teste selecionáveis de 10 mA até 200 A. Indicado para resistência de contato em disjuntores, chaves, conectores, barramentos, fusíveis, cabos, motores e transformadores. Equipamento portátil em maleta, com leitura direta, alta resolução e aplicação em campo ou laboratório.",
     "manual": "#"
   },
   {
@@ -46,7 +46,7 @@
     "imagem": "./assets/img/MILIOHMÍMETRO DIGITAL 1,2A - MODELO HMDD-1 - HIGHMED.webp",
     "descricaoCurta": "Equipamento de alta precisão para medição de baixas resistências elétricas, atendendo à norma NBR 5419:2015.",
     "informacoes": "O Miliohmímetro HMMD é um equipamento de alta precisão para medição de baixas resistências elétricas, atendendo à norma NBR 5419:2015. Ideal para testes em disjuntores, chaves, conectores, cabos, barramentos, fusíveis e motores elétricos, oferece medições rápidas, confiáveis e seguras, com filtros para eliminação de interferências da rede elétrica e proteção contra descargas.",
-    "especificacoes": "Especificações técnicas sob consulta.",
+    "especificacoes": "Miliohmímetro digital para baixas resistências com corrente de teste de até 1,2 A. Opera por medição Kelvin a 4 terminais, com boa imunidade a interferências e proteção contra descargas. Indicado para continuidade elétrica, malhas de aterramento, SPDA, conexões, barramentos, cabos, chaves e pontos de equipotencialização. Compatível com aplicações de inspeção e laudos conforme NBR 5419.",
     "manual": "#"
   },
   {
@@ -56,7 +56,7 @@
     "imagem": "./assets/img/camera_termografica_1x.webp",
     "descricaoCurta": "Câmera térmica para manutenção preditiva com faixa de medição de -20°C a +250°C e captura simultânea de imagens.",
     "informacoes": "A Câmera Termográfica Ti10 foi desenvolvida para manutenção preditiva e diagnóstico de equipamentos, permitindo identificar falhas antes que se tornem problemas críticos. Com faixa de medição de -20°C a +250°C e alta sensibilidade térmica, captura imagens térmicas e visuais de forma simultânea, proporcionando inspeções rápidas, precisas e seguras.",
-    "especificacoes": "Especificações técnicas sob consulta.",
+    "especificacoes": "Câmera termográfica Fluke Ti10 com faixa de medição de -20 °C a +250 °C. Resolução térmica de 160 x 120 pixels, sensibilidade térmica adequada para manutenção preditiva e captura simultânea de imagem térmica e visual. Permite ajuste de emissividade, paletas de cores, armazenamento de imagens para relatório e inspeção de painéis elétricos, motores, conexões, rolamentos e componentes aquecidos.",
     "manual": "#"
   },
   {
@@ -66,7 +66,7 @@
     "imagem": "./assets/img/TERROMETRO DIGITAL TIPO ALICATE_1x.webp",
     "descricaoCurta": "Terrômetro digital tipo alicate para medições precisas de resistência de aterramento e corrente AC.",
     "informacoes": "O Terrômetro Digital ET-4310 foi desenvolvido para medições precisas de resistência de aterramento e corrente AC, utilizando tecnologia de medição por garra. Com alta resolução, memória interna e funções inteligentes como alarme e desligamento automático, oferece praticidade, segurança e confiabilidade para inspeções e manutenções em sistemas elétricos.",
-    "especificacoes": "Especificações técnicas sob consulta.",
+    "especificacoes": "Terrômetro digital tipo alicate para medição de resistência de aterramento sem desconexão do sistema, quando há caminho fechado de terra. Mede resistência de aterramento e corrente AC de fuga/circulação pela garra. Possui display digital, memória de leituras, função hold, alarmes configuráveis e desligamento automático. Indicado para inspeções rápidas em malhas, hastes, SPDA e sistemas multiaterrados.",
     "manual": "#"
   },
   {
@@ -76,7 +76,7 @@
     "imagem": "./assets/img/4 HASTES_1x.webp",
     "descricaoCurta": "Equipamento portátil de alta precisão para medições de resistência de aterramento e resistividade do solo com 4 bornes.",
     "informacoes": "O Terrômetro TMD-20KW é um equipamento portátil de alta precisão, desenvolvido para medições de resistência de aterramento e resistividade do solo. Sua construção robusta, filtros contra interferências e sistema de 4 bornes garantem resultados confiáveis mesmo em ambientes com elevado nível de ruído elétrico, tornando-o ideal para inspeções, projetos e manutenções em sistemas de aterramento.",
-    "especificacoes": "Especificações técnicas sob consulta.",
+    "especificacoes": "Terrômetro digital de 4 bornes para medição de resistência de aterramento e resistividade do solo. Permite ensaios com hastes auxiliares pelo método de queda de potencial e medições de resistividade com arranjo de Wenner. Faixa ampla de resistência, filtros contra ruídos da rede, alimentação portátil e aplicação em projetos, inspeções, laudos e manutenção de sistemas de aterramento.",
     "manual": "#"
   },
   {
@@ -86,7 +86,7 @@
     "imagem": "./assets/img/2 HASTES_1x.webp",
     "descricaoCurta": "Equipamento portátil para medição de resistência de aterramento e tensão AC em instalações elétricas.",
     "informacoes": "O Terrômetro MTR-1520D / MTR-1530 é um equipamento portátil desenvolvido para medição de resistência de aterramento e tensão AC em instalações residenciais, comerciais e industriais. Com alta precisão e operação simplificada, permite verificar a eficiência dos sistemas de aterramento, garantindo conformidade com normas de segurança e maior confiabilidade das instalações elétricas.",
-    "especificacoes": "Especificações técnicas sob consulta.",
+    "especificacoes": "Terrômetro digital portátil para medição de resistência de aterramento com hastes auxiliares e medição de tensão AC presente no sistema. Modelos MTR-1520D/MTR-1530 voltados a ensaios de aterramento em instalações residenciais, comerciais e industriais. Possui escalas selecionáveis, display digital, indicação de bateria, acessórios de teste e aplicação em verificação de eficiência de aterramento.",
     "manual": "#"
   },
   {
@@ -96,7 +96,7 @@
     "imagem": "./assets/img/TERROMETRO DIGITAL S HASTES.png",
     "descricaoCurta": "Terrômetro sem hastes de alta precisão para medição de resistência de aterramento via método de queda de tensão.",
     "informacoes": "Equipamento desenvolvido para medições precisas de resistência de aterramento, atendendo às normas técnicas da ABNT. Utilizando o método de queda de tensão, garante resultados confiáveis mesmo em sistemas complexos, como estruturas prediais e malhas de aterramento extensas. Sua operação prática, alta precisão e alimentação direta pela rede elétrica tornam o equipamento ideal para inspeções, laudos e manutenções em sistemas de proteção elétrica.",
-    "especificacoes": "Especificações técnicas sob consulta.",
+    "especificacoes": "Terrômetro digital sem hastes para medição de resistência de aterramento utilizando alimentação pela rede elétrica e método de queda de tensão. Indicado para locais onde a cravação de hastes auxiliares é difícil ou inviável. Aplicável a estruturas prediais, quadros, malhas e sistemas de proteção, com leitura direta, operação simplificada e uso em inspeções e laudos técnicos.",
     "manual": "#"
   },
   {
@@ -106,7 +106,7 @@
     "imagem": "./assets/img/DECIBELÍMETRO 30 A 130 DBA MODELO INS-1385 INSTRUSUL.png",
     "descricaoCurta": "Decibelímetro de alta precisão para medição e monitoramento de níveis de ruído de 30 a 130 dBA.",
     "informacoes": "O Decibelímetro INS-1385 é um equipamento de alta precisão desenvolvido para medição e monitoramento de níveis de ruído em ambientes industriais, comerciais e residenciais. Ideal para avaliações de conformidade, controle de qualidade e análise acústica, oferece medições confiáveis, registro de valores mínimos e máximos e excelente desempenho em diversas aplicações.",
-    "especificacoes": "Especificações técnicas sob consulta.",
+    "especificacoes": "Decibelímetro digital com faixa de medição de 30 a 130 dBA. Possui ponderação A, resposta rápida/lenta, registro de valores mínimo e máximo, display digital e aplicação em avaliações de ruído ocupacional, ambiental e de conforto acústico. Indicado para inspeções em áreas industriais, comerciais, salas técnicas, máquinas e ambientes de trabalho.",
     "manual": "#"
   },
   {
@@ -116,7 +116,7 @@
     "imagem": "./assets/img/THERMO-LUXÍMETRO 0 A 200.000 LUX.png",
     "descricaoCurta": "Thermo-Luxímetro digital para medições precisas de intensidade luminosa e temperatura.",
     "informacoes": "O Luxímetro Digital INS-1381 foi desenvolvido para medições precisas de intensidade luminosa em ambientes residenciais, comerciais e industriais. Com ampla faixa de medição, monitoramento de temperatura e registro de valores mínimos e máximos, é a solução ideal para avaliações de iluminação, inspeções técnicas e adequação às normas de luminosidade.",
-    "especificacoes": "Especificações técnicas sob consulta.",
+    "especificacoes": "Thermo-luxímetro digital para medição de iluminância de 0 a 200.000 lux e temperatura aproximada de -9,9 °C a 49,9 °C. Possui seleção de escala, sensor fotométrico, registro de mínimo/máximo e display digital. Indicado para avaliações de iluminação, inspeções de ambientes de trabalho, escritórios, áreas produtivas e verificações de conformidade luminotécnica.",
     "manual": "#"
   },
   {
@@ -126,7 +126,7 @@
     "imagem": "./assets/img/MÊGOHMETRO DIGITAL 1KV MODELO HMMG-1 HIGHMED.png",
     "descricaoCurta": "Megôhmetro digital de 1kV para testes de resistência de isolação e medição de tensão AC.",
     "informacoes": "O Megômetro HMMG 1KV é um equipamento versátil e de alta confiabilidade para testes de resistência de isolação, medição de tensão AC e verificação de sequência de fase. Com design moderno e operação simplificada, é ideal para inspeções em sistemas elétricos, equipamentos industriais, para-raios e instalações que exigem máxima segurança e desempenho.",
-    "especificacoes": "Especificações técnicas sob consulta.",
+    "especificacoes": "Megôhmetro digital de 1 kV para ensaio de resistência de isolação em cabos, motores, painéis, transformadores e instalações elétricas. Tensão de teste de até 1000 V, medição de resistência de isolação em alta escala, medição de tensão AC e recursos de segurança para descarga/indicação de tensão. Indicado para manutenção preventiva e emissão de laudos de isolação.",
     "manual": "#"
   },
   {
@@ -136,7 +136,7 @@
     "imagem": "./assets/img/MÊGOHMETRO DIGITAL 1KV MODELO HMMG-1 HIGHMED.png",
     "descricaoCurta": "Megôhmetro digital de 15kV de alta performance para testes de resistência de isolação em média e alta tensão.",
     "informacoes": "O Megômetro HMMG 15KV é um equipamento de alta performance para testes de resistência de isolação em sistemas elétricos de média e alta tensão. Além de medir tensão AC e sequência de fase, oferece diagnósticos precisos e confiáveis para equipamentos elétricos, sistemas de energia e para-raios, garantindo maior segurança e eficiência nas inspeções e manutenções.",
-    "especificacoes": "Especificações técnicas sob consulta.",
+    "especificacoes": "Megôhmetro digital de alta tensão com tensão de teste de até 15 kV para ensaios de resistência de isolação em equipamentos de média e alta tensão. Indicado para cabos, transformadores, motores, geradores, disjuntores e para-raios. Possui medição de resistência de isolação em escala elevada, temporização de ensaio, recursos para índices de diagnóstico como PI/DAR conforme configuração do modelo e descarga segura após o teste.",
     "manual": "#"
   },
   {
@@ -146,7 +146,7 @@
     "imagem": "./assets/img/MÊGOHMETRO ANALOGICO MODELO MG-2010 ICEL.png",
     "descricaoCurta": "Megôhmetro analógico portátil para medir resistência de isolação, tensão alternada e continuidade.",
     "informacoes": "O MG-2010 é um Megôhmetro analógico portátil que permite medir resistência de isolação, tensão alternada e continuidade (resistência). Ele é indicado para ser usado no teste de instalações e equipamentos elétricos. Ele tem dois modos de funcionamento, um através de uma chave de atuação instantânea e outro através de um timer que desliga automaticamente o Megôhmetro depois de aproximadamente 5 minutos, para economizar a energia das pilhas.",
-    "especificacoes": "Especificações técnicas sob consulta.",
+    "especificacoes": "Megôhmetro analógico portátil ICEL MG-2010 para testes de resistência de isolação, medição de tensão alternada e continuidade. Possui indicação por escala analógica, acionamento instantâneo ou temporizado e alimentação por pilhas. Indicado para verificações em instalações elétricas, motores, cabos, ferramentas, painéis e equipamentos de baixa tensão.",
     "manual": "#"
   },
   {
@@ -156,7 +156,7 @@
     "imagem": "./assets/img/FREQUENCÍMETRO  FASÍMETRO E INDICADOR DE FASE MFA-850 MINIPA.png",
     "descricaoCurta": "Equipamento para identificar a sequência de fase e detectar fase aberta em sistemas trifásicos.",
     "informacoes": "Equipamento desenvolvido para identificar a sequência de fase e detectar fase aberta em sistemas trifásicos. Compacto, seguro e de fácil utilização, oferece medições confiáveis em instalações elétricas industriais e comerciais, garantindo maior agilidade, segurança e precisão durante inspeções e manutenções.",
-    "especificacoes": "Especificações técnicas sob consulta.",
+    "especificacoes": "Frequencímetro, fasímetro e indicador de sequência de fase para sistemas trifásicos. Permite identificar ordem das fases, fase aberta e frequência da rede em instalações elétricas. Equipamento portátil com pontas de teste, indicação visual e aplicação em partida de motores, comissionamento de painéis, manutenção industrial e verificação de alimentação trifásica.",
     "manual": "#"
   },
   {
@@ -166,7 +166,7 @@
     "imagem": "./assets/img/ALICATE AMPERÍMETRO MODELO 302+ FLUKE.png",
     "descricaoCurta": "Alicate Amperímetro True RMS de alta precisão para medições de corrente e tensão AC/DC.",
     "informacoes": "O Alicate Amperímetro 302+ da Fluke é um equipamento de alta precisão para medições de corrente AC e DC, tensão AC e DC, resistência, continuidade e teste de diodos. Com tecnologia True RMS, oferece resultados confiáveis mesmo em ambientes com distorção harmônica, sendo ideal para profissionais que buscam desempenho, segurança e versatilidade em suas medições elétricas.",
-    "especificacoes": "Especificações técnicas sob consulta.",
+    "especificacoes": "Alicate amperímetro Fluke 302+ para medições de corrente AC por garra e medições elétricas com pontas de prova. Mede tensão AC/DC, resistência, continuidade e corrente AC, com display digital, retenção de leitura e categoria de segurança para uso em instalações elétricas. Indicado para manutenção, diagnóstico de cargas, painéis, circuitos e equipamentos de baixa tensão.",
     "manual": "#"
   },
   {
@@ -176,7 +176,7 @@
     "imagem": "./assets/img/MEDIDOR DE RELAÇÃO DE TRANSFORMAÇÃO.png",
     "descricaoCurta": "Equipamento de alta performance para medições de relação de transformação em média e alta tensão.",
     "informacoes": "O Medidor de Relação de Transformação HMTTR-2000 da Highmed é um equipamento de alta performance para medições de relação de transformação em sistemas elétricos de média e alta tensão. Além de medir tensão AC e sequência de fase, oferece diagnósticos precisos e confiáveis para equipamentos elétricos, sistemas de energia e para-raios, garantindo maior segurança e eficiência nas inspeções e manutenções.",
-    "especificacoes": "Especificações técnicas sob consulta.",
+    "especificacoes": "Medidor de relação de transformação Highmed HMTTR-2000 para ensaios em transformadores de potência, distribuição e instrumentos. Realiza medição da relação de transformação, verificação de polaridade/grupo vetorial conforme aplicação, corrente de excitação e comparação entre fases. Indicado para comissionamento, manutenção preventiva, recebimento técnico e diagnóstico de transformadores.",
     "manual": "#"
   },
   {
@@ -186,7 +186,7 @@
     "imagem": "./assets/img/CONJUNTO DE ATERRAMENTO TEMPORÁRIO.png",
     "descricaoCurta": "Conjunto essencial para garantir a segurança durante trabalhos em instalações elétricas.",
     "informacoes": "O Conjunto de Aterramento Temporário é um equipamento essencial para garantir a segurança durante trabalhos em instalações elétricas. Composto por hastes de aterramento, cabos de conexão e grampos de fixação, é projetado para criar um caminho seguro para a dissipação de correntes de falha, protegendo os trabalhadores contra choques elétricos e garantindo a conformidade com as normas de segurança.",
-    "especificacoes": "Especificações técnicas sob consulta.",
+    "especificacoes": "Conjunto de aterramento temporário para segurança em trabalhos com instalações elétricas desenergizadas. Composto por cabos flexíveis de cobre, grampos de conexão, haste/bastão de manobra e acessórios conforme configuração do conjunto. Aplicável a redes e equipamentos até 34 kV conforme ficha do produto, com finalidade de equipotencialização, escoamento de energizações acidentais e proteção da equipe conforme práticas da NR-10.",
     "manual": "#"
   },
   {
@@ -196,7 +196,7 @@
     "imagem": "./assets/img/LOCALIZADOR DETECTOR DE DISJUNTOR CIRCUITO ELÉTRICO.png",
     "descricaoCurta": "Equipamento portátil para identificar e localizar disjuntores ativos e inativos em painéis elétricos.",
     "informacoes": "O Localizador Detector de Disjuntor é um equipamento portátil projetado para identificar a localização de disjuntores em painéis elétricos, facilitando a manutenção e o diagnóstico de circuitos. Com tecnologia avançada, permite detectar disjuntores ativos e inativos, proporcionando maior eficiência e segurança durante inspeções e reparos em instalações elétricas.",
-    "especificacoes": "Especificações técnicas sob consulta.",
+    "especificacoes": "Localizador de disjuntores/circuitos modelo EM419A ou equivalente, composto por transmissor e receptor. Utilizado para identificar o disjuntor correspondente a tomadas e circuitos energizados, localizar circuitos em quadros elétricos e agilizar manutenção. Opera em redes de baixa tensão, possui indicação sonora/visual de sinal e ajuste de sensibilidade no receptor.",
     "manual": "#"
   },
   {
@@ -206,7 +206,7 @@
     "imagem": "./assets/img/DETECTOR DE TENSÃO POR CONTATO DE 1KV.png",
     "descricaoCurta": "Detector portátil de tensão por contato para sistemas de média e alta tensão (1kV a 138kV).",
     "informacoes": "O Detector de Tensão por Contato é um equipamento portátil projetado para medir tensões elétricas em sistemas de média e alta tensão. Com tecnologia avançada, permite realizar medições precisas e seguras, garantindo o funcionamento adequado dos equipamentos e a segurança dos trabalhadores.",
-    "especificacoes": "Especificações técnicas sob consulta.",
+    "especificacoes": "Detector de tensão por contato para média e alta tensão, com faixa nominal de aplicação de 1 kV a 138 kV conforme configuração do conjunto. Utilizado com bastão isolante compatível para confirmação de ausência/presença de tensão em redes, barramentos, chaves e equipamentos. Possui indicação visual e/ou sonora, circuito eletrônico de detecção e uso voltado a procedimentos de segurança antes do aterramento temporário.",
     "manual": "#"
   },
   {
@@ -216,7 +216,7 @@
     "imagem": "./assets/img/background-aparelhos.png",
     "descricaoCurta": "Sistema trifasico para testes e calibracao de protecao de reles.",
     "informacoes": "A Maleta de Calibracao de Rele ZCAR-802 e um sistema de teste de protecao de reles trifasico, indicado para ensaios, calibracoes e verificacoes em dispositivos de protecao eletrica. O equipamento auxilia equipes tecnicas em testes de operacao, desempenho e confiabilidade de reles de protecao.",
-    "especificacoes": "Modelo ZCAR-802. Sistema trifasico para teste de protecao de reles. Especificacoes tecnicas adicionais sob consulta.",
+    "especificacoes": "Sistema trifásico portátil para teste e calibração de relés de proteção. Possui saídas independentes de corrente e tensão para simulação de faltas e condições de operação em sistemas elétricos. Indicado para testes de sobrecorrente, subtensão/sobretensão, frequência, direção, temporização e verificação funcional de relés. Permite ensaios manuais e automatizados conforme recursos do software/acessórios do conjunto.",
     "manual": "#"
   }
 ]

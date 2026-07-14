@@ -1812,7 +1812,7 @@ body {
 /* --- ESTILOS DA SEÇÃO DE EQUIPAMENTOS --- */
 
 .eq-section {
-  padding: 60px 0;
+  padding: 130px 0 60px;
   background-color: #ffffff;
   font-family: "Poppins", sans-serif;
 }
@@ -2236,9 +2236,9 @@ body {
 /* --- Carrinho de Solicitacao --- */
 .eq-cart-widget {
   position: fixed;
-  top: 22px;
+  top: 112px;
   right: 22px;
-  z-index: 1000;
+  z-index: 900;
 }
 
 .eq-cart-toggle {
@@ -2522,7 +2522,7 @@ body {
 /*Pagina Laudos*/
 
 .laudos-section {
-  padding: 5rem 1rem;
+  padding: 130px 1rem 5rem;
   background-color: var(--white);
 }
 

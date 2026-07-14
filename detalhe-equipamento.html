@@ -11,6 +11,51 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <a href="index.html" aria-label="Voltar para a home">
+          <img src="./assets/img/Logo atomax.webp" alt="Atomax" style="height: 65px; width: auto;" />
+        </a>
+      </div>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#empresa">Empresa</a></li>
+
+          <li class="dropdown">
+            <a href="index.html#servicos">Serviços <i class="fa-solid fa-chevron-down text-sm"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="laudos.html">Laudos, Medições e Estudos</a></li>
+              <li><a href="https://wa.me/5547999985684?text=Olá! Gostaria de mais informações." target="_blank">Consultoria e Acessoria</a></li>
+              <li><a href="https://wa.me/5547999985684?text=Olá! Gostaria de mais informações." target="_blank">Gerenciamento, Supervisão e Fiscalização de Obras</a></li>
+              <li><a href="https://wa.me/5547999985684?text=Olá! Gostaria de mais informações." target="_blank">Manutenção Elétrica</a></li>
+              <li><a href="https://wa.me/5547999985684?text=Olá! Gostaria de mais informações." target="_blank">Pericias</a></li>
+              <li><a href="https://wa.me/5547999985684?text=Olá! Gostaria de mais informações." target="_blank">Treinamentos</a></li>
+              <li><a href="https://wa.me/5547999985684?text=Olá! Gostaria de mais informações." target="_blank">Projetos</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="equipamentos.html" class="active">Locação <i class="fa-solid fa-chevron-down text-sm"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="equipamentos.html">Equipamentos</a></li>
+            </ul>
+          </li>
+
+          <li><a href="index.html#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="contact-header">
+        <a href="https://wa.me/5547999985684" target="_blank">
+          <img class="btn-whats" src="./assets/img/whatsapp-original.svg" alt="WhatsApp" style="height: 60px; width: auto;">
+        </a>
+      </div>
+    </div>
+  </header>
+
   <section class="eq-detail-section">
     <div class="container">
       <div class="eq-breadcrumb">
@@ -60,5 +105,7 @@
   </section>
 
   <script src="./js/detalhe.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/menu.js"></script>
 </body>
 </html>
