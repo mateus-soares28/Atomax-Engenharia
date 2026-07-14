@@ -375,7 +375,7 @@ body.menu-open {
   }
 
   .eq-detail-section {
-    padding: 42px 0 64px;
+    padding: 110px 0 64px;
   }
 
   .eq-detail-image {
@@ -460,6 +460,10 @@ body.menu-open {
 
   .services-detailed {
     padding-top: 88px !important;
+  }
+
+  .eq-detail-section {
+    padding-top: 96px;
   }
 
   .carousel-slide {
@@ -854,7 +858,7 @@ body.menu-open {
   }
 
   .eq-detail-section {
-    padding: 28px 0 44px;
+    padding: 88px 0 44px;
   }
 
   .eq-detail-image {
@@ -883,6 +887,10 @@ body.menu-open {
 
   .nav {
     top: 62px;
+  }
+
+  .eq-detail-section {
+    padding-top: 80px;
   }
 
   .slide-text-area h2,
