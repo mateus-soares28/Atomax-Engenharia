@@ -604,8 +604,20 @@ body {
   flex-shrink: 0;
 }
 
-.product-carousel:hover .product-track {
-  animation-play-state: paused;
+@media (hover: hover) and (pointer: fine) {
+  .product-carousel:hover .product-track {
+    animation-play-state: paused;
+  }
+}
+
+@media (hover: none), (pointer: coarse) {
+  .product-carousel {
+    touch-action: pan-y;
+  }
+
+  .product-track {
+    animation-play-state: running !important;
+  }
 }
 
 .product-carousel .product-card {

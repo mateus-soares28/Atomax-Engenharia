@@ -317,6 +317,7 @@ body.menu-open {
 
   .carousel-slide.active {
     flex-direction: column;
+    height: auto;
     min-height: 0;
   }
 
@@ -328,6 +329,9 @@ body.menu-open {
 
   .slide-content {
     padding: 38px;
+    height: auto;
+    min-height: 0;
+    align-items: flex-start;
   }
 
   .slide-text-area {
@@ -459,7 +463,7 @@ body.menu-open {
   }
 
   .services-detailed {
-    padding-top: 88px !important;
+    padding-top: 78px !important;
   }
 
   .eq-detail-section {
@@ -471,16 +475,17 @@ body.menu-open {
   }
 
   .slide-content {
-    padding: 28px;
+    padding: 24px;
   }
 
   .slide-text-area h2 {
     font-size: 1.75rem;
     line-height: 1.18;
+    margin-bottom: 14px;
   }
 
   .slide-text-area .description {
-    margin-bottom: 26px;
+    margin-bottom: 20px;
     font-size: 0.95rem;
   }
 
@@ -517,6 +522,7 @@ body.menu-open {
 
   .slide-header {
     align-items: flex-start;
+    margin-bottom: 14px;
   }
 
   .slide-image-area {
@@ -536,7 +542,7 @@ body.menu-open {
 
   .carousel-controls {
     gap: 16px;
-    margin-top: 26px;
+    margin-top: 18px;
   }
 
   .products,
@@ -741,7 +747,12 @@ body.menu-open {
   }
 
   .slide-content {
-    padding: 22px;
+    padding: 22px 20px;
+  }
+
+  .services-detailed {
+    padding-top: 72px !important;
+    padding-bottom: 38px !important;
   }
 
   .slide-text-area h2,
@@ -753,7 +764,7 @@ body.menu-open {
   }
 
   .slide-image-area {
-    height: 220px;
+    display: none;
   }
 
   .floating-badge {
