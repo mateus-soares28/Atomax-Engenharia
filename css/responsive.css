@@ -564,9 +564,19 @@ body.menu-open {
   }
 
   .product-carousel .product-card {
+    height: 520px;
     min-width: 260px;
     flex-basis: min(280px, calc(100vw - 56px));
     padding: 24px 20px;
+  }
+
+  .product-carousel .product-card h3 {
+    min-height: 4.6em;
+  }
+
+  .product-carousel .product-card p {
+    min-height: 9.8em;
+    -webkit-line-clamp: 7;
   }
 
   .product-card img {
@@ -802,6 +812,7 @@ body.menu-open {
 
   .section-footer {
     justify-content: stretch;
+    margin-top: 28px;
   }
 
   .section-footer .btn-catalog {
