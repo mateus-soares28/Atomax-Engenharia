@@ -765,12 +765,42 @@ body.menu-open {
     padding-bottom: 38px !important;
   }
 
+  .services-detailed .carousel-container {
+    height: 420px !important;
+    min-height: 420px;
+  }
+
+  .services-detailed .carousel-slide,
+  .services-detailed .carousel-slide.active {
+    height: 350px;
+    flex: 0 0 350px;
+  }
+
+  .services-detailed .slide-content {
+    height: 100%;
+  }
+
   .slide-text-area h2,
   .section-header h2,
   .eq-header h2,
   .rental-header h2,
   .laudos-info h2 {
     font-size: 1.55rem;
+  }
+
+  .slide-text-area h2,
+  .slide-text-area .description {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+  }
+
+  .slide-text-area h2 {
+    -webkit-line-clamp: 4;
+  }
+
+  .slide-text-area .description {
+    -webkit-line-clamp: 4;
   }
 
   .slide-image-area {
@@ -808,6 +838,27 @@ body.menu-open {
   .eq-bottom-info,
   .eq-detail-layout {
     padding: 20px;
+  }
+
+  .product-carousel {
+    height: 536px;
+    padding: 8px 0;
+    contain: layout paint;
+  }
+
+  .product-track {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    height: 520px;
+  }
+
+  .product-group {
+    height: 100%;
+  }
+
+  .product-carousel .product-card {
+    height: 100%;
   }
 
   .section-footer {
