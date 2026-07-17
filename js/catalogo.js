@@ -1,8 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const categoryItems = document.querySelectorAll('#eq-category-list li');
-    const productCards = document.querySelectorAll('.eq-product-card');
-    const tituloCategoria = document.getElementById('titulo-categoria');
-
     const whatsappPhone = '5547999985684';
     const cartStorageKey = 'atomaxCatalogCart';
     const openCartStorageKey = 'atomaxOpenCart';
@@ -17,29 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const cartClear = document.querySelector('.eq-cart-clear');
     const addCartButtons = document.querySelectorAll('.btn-add-cart');
     let cart = loadCart();
-
-    if (categoryItems.length > 0) {
-        categoryItems.forEach(item => {
-            item.addEventListener('click', function(e) {
-                e.preventDefault();
-
-                categoryItems.forEach(li => li.classList.remove('active'));
-                this.classList.add('active');
-
-                const filterValue = this.getAttribute('data-filter');
-                const categoryName = this.querySelector('.cat-left').textContent.trim();
-
-                if (tituloCategoria) {
-                    tituloCategoria.textContent = categoryName;
-                }
-
-                productCards.forEach(card => {
-                    const shouldShow = filterValue === 'todos' || card.getAttribute('data-categoria') === filterValue;
-                    card.style.display = shouldShow ? 'flex' : 'none';
-                });
-            });
-        });
-    }
 
     function loadCart() {
         try {

@@ -3,7 +3,10 @@ document.addEventListener("DOMContentLoaded", () => {
     gsap.registerPlugin(ScrollTrigger);
 
     // Selecionar todos os títulos e parágrafos
-    const textElements = gsap.utils.toArray('h1, h2, h3, h4, h5, h6, p');
+    const textElements = gsap
+        .utils
+        .toArray('h1, h2, h3, h4, h5, h6, p')
+        .filter((el) => !el.closest('.product-carousel'));
 
     textElements.forEach((el) => {
         gsap.from(el, {
@@ -31,7 +34,10 @@ document.addEventListener("DOMContentLoaded", () => {
         '.laudo-card'
     ].join(', ');
 
-    const cards = gsap.utils.toArray(cardSelectors);
+    const cards = gsap
+        .utils
+        .toArray(cardSelectors)
+        .filter((card) => !card.closest('.product-carousel'));
 
     cards.forEach((card) => {
         gsap.from(card, {

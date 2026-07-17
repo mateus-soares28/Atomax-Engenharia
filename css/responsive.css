@@ -165,10 +165,6 @@ body.menu-open {
     height: 50px !important;
   }
 
-  .product-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .benefits-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 22px;
@@ -352,10 +348,6 @@ body.menu-open {
     bottom: 24px;
   }
 
-  .product-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .product-carousel .product-card {
     flex-basis: min(320px, calc(50vw - 40px));
   }
@@ -392,10 +384,6 @@ body.menu-open {
 
   .eq-layout {
     flex-direction: column;
-  }
-
-  .eq-sidebar {
-    width: 100%;
   }
 
   .eq-features-bar {
@@ -553,7 +541,6 @@ body.menu-open {
     padding-block: 56px;
   }
 
-  .product-grid,
   .benefits-grid,
   .services-grid,
   .services-detailed-grid,

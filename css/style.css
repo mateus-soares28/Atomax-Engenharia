@@ -1,4 +1,4 @@
-/* --- Variáveis Globais --- */
+﻿/* --- VariÃ¡veis Globais --- */
 :root {
   --color-primary-hover: #b7791f;
   --color-dark-bg: #111827;
@@ -293,7 +293,7 @@ body {
   line-height: 1.6;
 }
 
-/* Grid de Ícones de Benefícios */
+/* Grid de Ãcones de BenefÃ­cios */
 .hero-features-grid {
   display: flex;
   gap: 35px;
@@ -319,7 +319,7 @@ body {
   line-height: 1.2;
 }
 
-/* Botões */
+/* BotÃµes */
 .hero-actions {
   display: flex;
   gap: 35px;
@@ -388,7 +388,7 @@ body {
   /* Puxa os cards para cima da borda da hero */
   position: relative;
   z-index: 0;
-  /* Menor que a hero-image para ficar atrás dos aparelhos */
+  /* Menor que a hero-image para ficar atrÃ¡s dos aparelhos */
 }
 
 .info-card {
@@ -451,12 +451,6 @@ body {
   margin: 16px auto 0;
 }
 
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-}
-
 .product-card {
   background: #ffffff;
   border: 1px solid var(--color-border);
@@ -512,7 +506,7 @@ body {
 .btn-header {
   background-color: rgb(255, 255, 255, 0.9);
   color: var(--color-primary);
-  /* Ajuste para var(--color-text-dark) caso sua cor primária seja muito clara */
+  /* Ajuste para var(--color-text-dark) caso sua cor primÃ¡ria seja muito clara */
   padding: 12px 28px;
   border-radius: 55px;
   text-decoration: none;
@@ -531,19 +525,19 @@ body {
   transform: translateY(-2px);
 }
 
-/* --- NOVO CONTEÚDO: Estilos do Botão do Catálogo --- */
+/* --- NOVO CONTEÃšDO: Estilos do BotÃ£o do CatÃ¡logo --- */
 .section-footer {
   display: flex;
   justify-content: flex-end;
-  /* Joga o botão para o canto direito */
+  /* Joga o botÃ£o para o canto direito */
   margin-top: 40px;
-  /* Dá um respiro entre os cards e o botão */
+  /* DÃ¡ um respiro entre os cards e o botÃ£o */
 }
 
 .btn-catalog {
   background-color: var(--color-primary);
   color: #ffffff;
-  /* Ajuste para var(--color-text-dark) caso sua cor primária seja muito clara */
+  /* Ajuste para var(--color-text-dark) caso sua cor primÃ¡ria seja muito clara */
   padding: 12px 28px;
   border-radius: 55px;
   text-decoration: none;
@@ -567,6 +561,8 @@ body {
   overflow: hidden;
   position: relative;
   padding: 8px 0 4px;
+  touch-action: pan-y pinch-zoom;
+  overscroll-behavior-x: contain;
 }
 
 .product-carousel::before,
@@ -595,8 +591,9 @@ body {
   align-items: stretch;
   gap: 24px;
   width: max-content;
-  animation: product-scroll 24s linear infinite;
+  animation: product-scroll 42s linear infinite;
   will-change: transform;
+  touch-action: pan-y pinch-zoom;
 }
 
 .product-group {
@@ -604,6 +601,11 @@ body {
   align-items: stretch;
   gap: 24px;
   flex-shrink: 0;
+  touch-action: pan-y pinch-zoom;
+}
+
+.product-carousel.is-touching .product-track {
+  animation-play-state: paused !important;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -613,8 +615,12 @@ body {
 }
 
 @media (hover: none), (pointer: coarse) {
-  .product-carousel {
-    touch-action: pan-y;
+  .product-carousel,
+  .product-track,
+  .product-group,
+  .product-carousel .product-card,
+  .product-carousel .link-more {
+    touch-action: pan-y pinch-zoom;
   }
 
   .product-track {
@@ -632,10 +638,15 @@ body {
   height: 500px;
   min-width: 280px;
   max-width: 320px;
+  -webkit-user-drag: none;
+  opacity: 1 !important;
+  user-select: none;
 }
 
 .product-carousel .product-card h3 {
   min-height: 4.2em;
+  opacity: 1 !important;
+  transform: none !important;
 }
 
 .product-carousel .product-card p {
@@ -645,6 +656,8 @@ body {
   overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 7;
+  opacity: 1 !important;
+  transform: none !important;
 }
 
 .product-carousel .product-card .link-more {
@@ -668,7 +681,7 @@ body {
   }
 }
 
-/* --- Seção Benefícios --- */
+/* --- SeÃ§Ã£o BenefÃ­cios --- */
 .benefits {
   padding: 80px 0;
   background-color: #ffffff;
@@ -705,7 +718,7 @@ body {
   line-height: 1.5;
 }
 
-/* --- Seção Serviços Dark --- */
+/* --- SeÃ§Ã£o ServiÃ§os Dark --- */
 .services-dark {
   background-color: var(--color-dark-bg);
   color: #ffffff;
@@ -826,7 +839,7 @@ body {
   filter: brightness(1.1);
 }
 
-/* --- Seção: Sobre a Empresa --- */
+/* --- SeÃ§Ã£o: Sobre a Empresa --- */
 .about-company {
   padding: 100px 0;
   background-color: var(--color-light-bg);
@@ -861,7 +874,7 @@ body {
   padding-left: 20px;
 }
 
-/* Linha dourada ao lado do título (padrão de design da imagem) */
+/* Linha dourada ao lado do tÃ­tulo (padrÃ£o de design da imagem) */
 .about-text h2::before {
   content: "";
   position: absolute;
@@ -876,7 +889,7 @@ body {
 .about-text p {
   font-size: 0.95rem;
   color: #4b5563;
-  /* Cinza médio para conforto de leitura longo */
+  /* Cinza mÃ©dio para conforto de leitura longo */
   line-height: 1.7;
   margin-bottom: 16px;
 }
@@ -946,7 +959,7 @@ body {
   justify-content: center;
   font-size: 1.5rem;
   flex-shrink: 0;
-  /* Garante que o ícone não seja esmagado pelo texto */
+  /* Garante que o Ã­cone nÃ£o seja esmagado pelo texto */
 }
 
 .feature-info h4 {
@@ -1004,7 +1017,7 @@ body {
   height: 100%;
 }
 
-/* --- Área de Texto (Esquerda) --- */
+/* --- Ãrea de Texto (Esquerda) --- */
 .slide-content {
   width: 50%;
   flex: 0 0 50%;
@@ -1055,7 +1068,7 @@ body {
   margin-bottom: 40px;
 }
 
-/* --- Grid de Ícones --- */
+/* --- Grid de Ãcones --- */
 .features-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1128,7 +1141,7 @@ body {
   font-size: 1.2rem;
 }
 
-/* --- Área de Imagem (Direita) --- */
+/* --- Ãrea de Imagem (Direita) --- */
 .slide-image-area {
   width: 50%;
   flex: 0 0 50%;
@@ -1155,7 +1168,7 @@ body {
   bottom: 40px;
   right: 40px;
   background-color: rgba(17, 24, 39, 0.9);
-  /* Fundo escuro translúcido */
+  /* Fundo escuro translÃºcido */
   backdrop-filter: blur(4px);
   padding: 16px 24px;
   border-radius: 8px;
@@ -1256,7 +1269,7 @@ body {
   color: var(--color-text-dark);
 }
 
-/* --- Página de Locação --- */
+/* --- PÃ¡gina de LocaÃ§Ã£o --- */
 .rental-page {
   padding-bottom: 100px;
 }
@@ -1317,10 +1330,10 @@ body {
   line-height: 1.5;
 }
 
-/* --- Seção Inferior (Vantagens e FAQ) --- */
+/* --- SeÃ§Ã£o Inferior (Vantagens e FAQ) --- */
 .rental-info-wrapper {
   background-color: #fffdf5;
-  /* Tom bege muito sutil fiel à imagem */
+  /* Tom bege muito sutil fiel Ã  imagem */
   border-radius: 20px;
   padding: 50px;
 }
@@ -1358,7 +1371,7 @@ body {
   color: var(--color-primary);
   font-size: 1.1rem;
   margin-top: 3px;
-  /* Alinha o ícone com a primeira linha do texto */
+  /* Alinha o Ã­cone com a primeira linha do texto */
 }
 
 /* --- Accordion FAQ --- */
@@ -1393,7 +1406,7 @@ body {
 
 .faq-answer {
   display: none;
-  /* Oculto por padrão, JS controla */
+  /* Oculto por padrÃ£o, JS controla */
   padding: 0 20px 20px 20px;
 }
 
@@ -1453,9 +1466,9 @@ body {
 /* --- Footer Principal --- */
 .footer-main {
   background-color: #0f172a;
-  /* Fundo escuro fiel à imagem */
+  /* Fundo escuro fiel Ã  imagem */
   color: #d1d5db;
-  /* Texto cinza claro para contraste confortável */
+  /* Texto cinza claro para contraste confortÃ¡vel */
   padding-top: 80px;
   font-family: "Inter", sans-serif;
 }
@@ -1463,12 +1476,12 @@ body {
 .footer-top {
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr 1fr;
-  /* A primeira coluna é um pouco maior */
+  /* A primeira coluna Ã© um pouco maior */
   gap: 40px;
   padding-bottom: 60px;
 }
 
-/* Divisórias verticais sutis entre as colunas */
+/* DivisÃ³rias verticais sutis entre as colunas */
 .footer-col {
   position: relative;
 }
@@ -1544,7 +1557,7 @@ body {
   color: #0f172a;
 }
 
-/* --- Títulos das Colunas --- */
+/* --- TÃ­tulos das Colunas --- */
 .footer-col h4 {
   color: #ffffff;
   font-size: 1.1rem;
@@ -1554,7 +1567,7 @@ body {
   padding-bottom: 12px;
 }
 
-/* Linha dourada abaixo dos títulos */
+/* Linha dourada abaixo dos tÃ­tulos */
 .footer-col h4::after {
   content: "";
   position: absolute;
@@ -1565,7 +1578,7 @@ body {
   background-color: var(--color-primary);
 }
 
-/* --- Coluna 2: Links Rápidos --- */
+/* --- Coluna 2: Links RÃ¡pidos --- */
 .links-col ul {
   list-style: none;
   padding: 0;
@@ -1584,7 +1597,7 @@ body {
   align-items: center;
   transition: color 0.3s ease;
   width: 80%;
-  /* Para não encostar o chevron na borda */
+  /* Para nÃ£o encostar o chevron na borda */
 }
 
 .links-col ul li a i {
@@ -1639,7 +1652,7 @@ body {
   font-size: 1rem;
 }
 
-/* --- Footer Bottom (Copyright e Créditos) --- */
+/* --- Footer Bottom (Copyright e CrÃ©ditos) --- */
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   padding: 24px 0;
@@ -1682,171 +1695,7 @@ body {
   font-weight: 600;
 }
 
-/* --- Products Section --- */
-.products {
-  padding: 80px 0;
-  background-color: #ffffff;
-}
-
-.section-header {
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-.section-header h2 {
-  font-size: 2rem;
-  color: var(--color-text-dark);
-  font-weight: 700;
-}
-
-.divider {
-  width: 60px;
-  height: 3px;
-  background-color: var(--color-primary);
-  margin: 16px auto 0;
-}
-
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-}
-
-.product-card {
-  background: #ffffff;
-  border: 1px solid var(--color-border);
-  border-radius: 12px;
-  padding: 32px 24px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
-  transition:
-    transform var(--transition-speed),
-    box-shadow var(--transition-speed);
-}
-
-.product-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
-}
-
-.product-card img {
-  width: 100%;
-  height: 160px;
-  object-fit: contain;
-  margin-bottom: 24px;
-}
-
-.product-card h3 {
-  font-size: 1.15rem;
-  margin-bottom: 12px;
-  color: var(--color-text-dark);
-}
-
-.product-card p {
-  font-size: 0.9rem;
-  color: #6b7280;
-  margin-bottom: 24px;
-  flex-grow: 1;
-}
-
-.link-more {
-  color: var(--color-primary);
-  text-decoration: none;
-  font-weight: 600;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 0.95rem;
-}
-
-.link-more:hover {
-  color: var(--color-primary-hover);
-}
-
-/* --- Products Section --- */
-.products {
-  padding: 80px 0;
-  background-color: #ffffff;
-}
-
-.section-header {
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-.section-header h2 {
-  font-size: 2rem;
-  color: var(--color-text-dark);
-  font-weight: 700;
-}
-
-.divider {
-  width: 60px;
-  height: 3px;
-  background-color: var(--color-primary);
-  margin: 16px auto 0;
-}
-
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-}
-
-.product-card {
-  background: #ffffff;
-  border: 1px solid var(--color-border);
-  border-radius: 12px;
-  padding: 32px 24px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
-  transition:
-    transform var(--transition-speed),
-    box-shadow var(--transition-speed);
-}
-
-.product-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
-}
-
-.product-card img {
-  width: 100%;
-  height: 160px;
-  object-fit: contain;
-  margin-bottom: 24px;
-}
-
-.product-card h3 {
-  font-size: 1.15rem;
-  margin-bottom: 12px;
-  color: var(--color-text-dark);
-}
-
-.product-card p {
-  font-size: 0.9rem;
-  color: #6b7280;
-  margin-bottom: 24px;
-  flex-grow: 1;
-}
-
-.link-more {
-  color: var(--color-primary);
-  text-decoration: none;
-  font-weight: 600;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 0.95rem;
-}
-
-.link-more:hover {
-  color: var(--color-primary-hover);
-}
-
-/* --- ESTILOS DA SEÇÃO DE EQUIPAMENTOS --- */
+/* --- ESTILOS DA SEÃ‡ÃƒO DE EQUIPAMENTOS --- */
 
 .eq-section {
   padding: 130px 0 60px;
@@ -1878,7 +1727,7 @@ body {
   font-size: 0.75rem;
 }
 
-/* Header da Seção */
+/* Header da SeÃ§Ã£o */
 .eq-header {
   margin-bottom: 40px;
   max-width: 800px;
@@ -1912,79 +1761,6 @@ body {
 }
 
 /* --- SIDEBAR --- */
-.eq-sidebar {
-  width: 280px;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.eq-categories-widget {
-  background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
-  padding: 20px 0;
-}
-
-.eq-categories-widget h3 {
-  font-size: 1.1rem;
-  color: var(--color-dark-bg);
-  margin-bottom: 15px;
-  padding: 0 20px;
-  font-weight: 600;
-}
-
-.eq-category-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.eq-category-list li a {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 20px;
-  color: #4b5563;
-  text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: 500;
-  transition: all var(--transition-speed);
-  border-left: 3px solid transparent;
-}
-
-.eq-category-list li a .cat-left {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.eq-category-list li a .cat-left i {
-  color: var(--color-primary);
-  font-size: 1rem;
-  width: 20px;
-  text-align: center;
-}
-
-.eq-category-list li a .cat-arrow {
-  font-size: 0.8rem;
-  color: #9ca3af;
-}
-
-/* Estado Ativo/Hover das Categorias */
-.eq-category-list li.active a,
-.eq-category-list li a:hover {
-  background-color: #fffbeb;
-  /* Fundo amarelo bem claro */
-  border-left-color: var(--color-primary);
-  color: var(--color-primary-hover);
-}
-
-.eq-category-list li.active a .cat-arrow,
-.eq-category-list li a:hover .cat-arrow {
-  color: var(--color-primary);
-}
 
 /* Widget de Ajuda Sidebar */
 .eq-help-widget {
@@ -2158,7 +1934,7 @@ body {
   align-self: flex-start;
   padding: 4px 12px;
   border: 1px solid rgba(214, 158, 46, 0.3);
-  /* Dourado com transparência */
+  /* Dourado com transparÃªncia */
   border-radius: 20px;
   font-size: 0.75rem;
   color: var(--color-primary);
@@ -2229,7 +2005,7 @@ body {
   color: #fff;
 }
 
-/* Container para alinhar a tag e o botão */
+/* Container para alinhar a tag e o botÃ£o */
 .eq-card-actions {
   display: flex;
   justify-content: space-between;
@@ -2238,7 +2014,7 @@ body {
   gap: 10px;
 }
 
-/* Estilo do Botão Adicionar ao Carrinho */
+/* Estilo do BotÃ£o Adicionar ao Carrinho */
 .btn-add-cart {
   background-color: var(--color-primary);
   color: #ffffff;
@@ -2251,7 +2027,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 15px;
-  /* Espaço entre o ícone e o texto */
+  /* EspaÃ§o entre o Ã­cone e o texto */
   transition:
     background-color 0.2s ease,
     transform 0.1s ease;
@@ -2646,7 +2422,7 @@ body {
   font-weight: 600;
 }
 
-/* --- Lado Direito (Acordeão) --- */
+/* --- Lado Direito (AcordeÃ£o) --- */
 .laudos-accordion {
   display: flex;
   flex-direction: column;
@@ -2703,7 +2479,7 @@ body {
   transform: rotate(-135deg);
 }
 
-/* Animação com Grid */
+/* AnimaÃ§Ã£o com Grid */
 .accordion-content {
   display: grid;
   grid-template-rows: 0fr;
@@ -2740,7 +2516,7 @@ body {
 }
 
 .check-list li::before {
-  content: "✓";
+  content: "âœ“";
   color: var(--white);
   background-color: var(--color-primary);
   border-radius: 50%;
@@ -2951,19 +2727,19 @@ body {
 }
 
 /* =========================================
-   BOTOES DO CARD RESUMIDO (Catálogo)
+   BOTOES DO CARD RESUMIDO (CatÃ¡logo)
    ========================================= */
 .eq-card-actions {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Separa os botões */
+  justify-content: space-between; /* Separa os botÃµes */
   gap: 10px;
   margin-top: 20px;
-  border-top: 1px solid #f3f4f6; /* Linha sutil para separar as ações */
+  border-top: 1px solid #f3f4f6; /* Linha sutil para separar as aÃ§Ãµes */
   padding-top: 15px;
 }
 
-/* Novo botão "Ver Detalhes" */
+/* Novo botÃ£o "Ver Detalhes" */
 .btn-details {
   background-color: transparent;
   color: var(--color-primary-hover);
@@ -2985,15 +2761,15 @@ body {
   transform: translateY(-2px);
 }
 
-/* Ajuste no botão de adicionar ao carrinho para alinhar com o Ver Detalhes */
+/* Ajuste no botÃ£o de adicionar ao carrinho para alinhar com o Ver Detalhes */
 .eq-card-actions .btn-add-cart {
-  margin-top: 0; /* Remove a margem do código antigo para alinhar no flexbox */
+  margin-top: 0; /* Remove a margem do cÃ³digo antigo para alinhar no flexbox */
   padding: 9px 16px; /* Deixa um pouco mais encorpado */
 }
 
 
 /* =========================================
-   PÁGINA ÚNICA DE DETALHES (detalhe-equipamento.html)
+   PÃGINA ÃšNICA DE DETALHES (detalhe-equipamento.html)
    ========================================= */
 .eq-detail-section {
   padding: 130px 0 80px; /* Padding superior maior por conta do Header fixo */
@@ -3014,7 +2790,7 @@ body {
   border: 1px solid var(--color-border);
 }
 
-/* Área da Imagem */
+/* Ãrea da Imagem */
 .eq-detail-image {
   background-color: #f9fafb; /* Fundo levemente cinza para destacar o equipamento */
   border-radius: 12px;
@@ -3031,10 +2807,10 @@ body {
   max-width: 100%;
   max-height: 400px;
   object-fit: contain;
-  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.05)); /* Dá profundidade ao PNG/WebP */
+  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.05)); /* DÃ¡ profundidade ao PNG/WebP */
 }
 
-/* Área de Informações */
+/* Ãrea de InformaÃ§Ãµes */
 .eq-detail-info {
   display: flex;
   flex-direction: column;
@@ -3054,12 +2830,12 @@ body {
   margin-bottom: 10px;
 }
 
-/* Afastamento dos Dropdowns na página de detalhes */
+/* Afastamento dos Dropdowns na pÃ¡gina de detalhes */
 .eq-detail-info .eq-card-dropdowns {
   margin: 10px 0 25px 0;
 }
 
-/* Botão de Adicionar ao Carrinho Gigante na página de detalhes */
+/* BotÃ£o de Adicionar ao Carrinho Gigante na pÃ¡gina de detalhes */
 .eq-detail-info .btn-add-cart {
   padding: 16px 32px;
   font-size: 1.1rem;

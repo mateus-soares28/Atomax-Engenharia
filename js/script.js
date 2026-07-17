@@ -13,6 +13,24 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Animação de hover adicional nos botões 'Saiba Mais'
+    const productTrack = document.querySelector('.product-carousel .product-track');
+    const productGroup = productTrack?.querySelector('.product-group');
+    const sourceProductCards = productGroup ? Array.from(productGroup.querySelectorAll('.product-card')) : [];
+
+    if (productTrack && productGroup && sourceProductCards.length) {
+        while (productGroup.children.length < sourceProductCards.length * 2) {
+            const sourceCard = sourceProductCards[productGroup.children.length % sourceProductCards.length];
+            productGroup.appendChild(sourceCard.cloneNode(true));
+        }
+
+        const cloneGroup = productGroup.cloneNode(true);
+        cloneGroup.setAttribute('aria-hidden', 'true');
+        cloneGroup.querySelectorAll('a').forEach(link => {
+            link.setAttribute('tabindex', '-1');
+        });
+        productTrack.appendChild(cloneGroup);
+    }
+
     const cards = document.querySelectorAll('.product-card');
     
     cards.forEach(card => {
@@ -29,6 +47,28 @@ document.addEventListener('DOMContentLoaded', () => {
             icon.style.transform = 'translateX(0)';
         });
     });
+
+    const productCarousel = document.querySelector('.product-carousel');
+    if (productCarousel) {
+        let resumeAnimationTimer;
+
+        const pauseProductCarousel = () => {
+            clearTimeout(resumeAnimationTimer);
+            productCarousel.classList.add('is-touching');
+        };
+
+        const resumeProductCarousel = () => {
+            clearTimeout(resumeAnimationTimer);
+            resumeAnimationTimer = setTimeout(() => {
+                productCarousel.classList.remove('is-touching');
+            }, 350);
+        };
+
+        productCarousel.addEventListener('touchstart', pauseProductCarousel, { passive: true });
+        productCarousel.addEventListener('touchmove', pauseProductCarousel, { passive: true });
+        productCarousel.addEventListener('touchend', resumeProductCarousel, { passive: true });
+        productCarousel.addEventListener('touchcancel', resumeProductCarousel, { passive: true });
+    }
 });
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -89,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
     dots.forEach(dot => dot.classList.remove('active'));
 
     slides[index].classList.add('active');
-    dots[index].classList.add('active');
+    if (dots[index]) dots[index].classList.add('active');
     
     // Atualiza o estado
     localStorage.setItem(STORAGE_KEY, index);
