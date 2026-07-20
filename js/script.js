@@ -18,11 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const sourceProductCards = productGroup ? Array.from(productGroup.querySelectorAll('.product-card')) : [];
 
     if (productTrack && productGroup && sourceProductCards.length) {
-        while (productGroup.children.length < sourceProductCards.length * 2) {
-            const sourceCard = sourceProductCards[productGroup.children.length % sourceProductCards.length];
-            productGroup.appendChild(sourceCard.cloneNode(true));
-        }
-
         const cloneGroup = productGroup.cloneNode(true);
         cloneGroup.setAttribute('aria-hidden', 'true');
         cloneGroup.querySelectorAll('a').forEach(link => {

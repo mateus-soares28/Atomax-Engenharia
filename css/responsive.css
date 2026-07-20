@@ -740,17 +740,12 @@ body.menu-open {
   }
 
   .floating-whatsapp-btn {
-    display: flex;
-    position: fixed;
+    display: flex !important;
     bottom: 24px;
     right: 24px;
     width: 60px;
     height: 60px;
     z-index: 9999;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.3s ease;
-    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
   }
   
   .floating-whatsapp-btn:active {
@@ -889,10 +884,10 @@ body.menu-open {
     height: auto;
     margin-inline: -16px;
     padding: 4px 16px 8px;
-    overflow-x: auto;
+    overflow-x: hidden;
     overflow-y: hidden;
     contain: content;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: none;
     -webkit-overflow-scrolling: touch;
   }
 
@@ -912,8 +907,7 @@ body.menu-open {
     width: max-content;
     height: auto;
     gap: 14px;
-    animation: none !important;
-    transform: none !important;
+    animation: product-scroll-mobile 30s linear infinite !important;
   }
 
   .product-group {
@@ -950,6 +944,23 @@ body.menu-open {
 
   .product-carousel .product-card .link-more {
     margin-top: auto;
+  }
+
+  .floating-whatsapp-btn {
+    right: 18px;
+    bottom: 18px;
+    width: 58px;
+    height: 58px;
+  }
+
+  @keyframes product-scroll-mobile {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(calc(-50% - 7px));
+    }
   }
 
   .section-footer {
