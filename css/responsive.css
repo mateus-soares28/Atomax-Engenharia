@@ -542,6 +542,10 @@ body.menu-open {
     padding-block: 56px;
   }
 
+  .products {
+    padding-top: 16px;
+  }
+
   .benefits-grid,
   .services-grid,
   .services-detailed-grid,
@@ -553,8 +557,10 @@ body.menu-open {
 
   .product-carousel .product-card {
     height: 520px;
+    width: 280px;
     min-width: 260px;
-    flex-basis: min(280px, calc(100vw - 56px));
+    max-width: calc(100vw - 56px);
+    flex: 0 0 auto;
     padding: 24px 20px;
   }
 
@@ -731,6 +737,30 @@ body.menu-open {
     width: min(390px, calc(100vw - 32px));
     max-height: calc(100vh - 120px);
   }
+
+  .floating-whatsapp-btn {
+    display: flex;
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 60px;
+    height: 60px;
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+  }
+  
+  .floating-whatsapp-btn:active {
+    transform: scale(0.95);
+  }
+
+  .floating-whatsapp-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 }
 
 /* Celular */
@@ -750,22 +780,24 @@ body.menu-open {
 
   .services-detailed {
     padding-top: 72px !important;
-    padding-bottom: 38px !important;
+    padding-bottom: 10px !important;
   }
 
   .services-detailed .carousel-container {
-    height: 420px !important;
-    min-height: 420px;
+    height: auto !important;
+    min-height: 0;
   }
 
   .services-detailed .carousel-slide,
   .services-detailed .carousel-slide.active {
-    height: 350px;
-    flex: 0 0 350px;
+    height: auto;
+    min-height: 380px;
+    flex: 0 0 auto;
   }
 
   .services-detailed .slide-content {
-    height: 100%;
+    height: auto;
+    flex-grow: 1;
   }
 
   .slide-text-area h2,

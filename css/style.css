@@ -1,4 +1,4 @@
-﻿/* --- VariÃ¡veis Globais --- */
+/* --- VariÃ¡veis Globais --- */
 :root {
   --color-primary-hover: #b7791f;
   --color-dark-bg: #111827;
@@ -2847,5 +2847,9 @@ body {
 
 .eq-detail-info .btn-add-cart:hover {
   box-shadow: 0 6px 20px rgba(245, 158, 11, 0.4);
+}
+
+.floating-whatsapp-btn {
+  display: none;
 }
 
