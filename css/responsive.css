@@ -335,11 +335,12 @@ body.menu-open {
   }
 
   .slide-image-area {
-    height: 360px;
+    height: auto;
     border-radius: 0 0 16px 16px;
   }
 
   .slide-image-area img {
+    height: auto;
     border-radius: 0 0 16px 16px;
   }
 
