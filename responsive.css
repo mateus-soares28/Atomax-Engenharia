@@ -1,0 +1,998 @@
+/* Responsive layer - Atomax */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img,
+picture,
+svg,
+video {
+  max-width: 100%;
+}
+
+.container,
+.header-container,
+.eq-main-content,
+.eq-product-card,
+.eq-detail-info,
+.slide-content,
+.slide-text-area,
+.footer-col,
+.rental-advantages,
+.rental-faq,
+.laudos-info,
+.laudos-accordion {
+  min-width: 0;
+}
+
+.mobile-menu-btn {
+  display: none;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  background: #ffffff;
+  color: var(--color-dark-bg);
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.mobile-menu-btn:hover,
+.mobile-menu-btn.active {
+  background-color: #fffbeb;
+  border-color: var(--color-primary);
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+/* Padrao dos cards da pagina de equipamentos */
+.eq-product-card {
+  min-height: 100%;
+}
+
+.eq-product-info {
+  gap: 12px;
+  height: 100%;
+}
+
+.eq-product-info h4 {
+  margin-bottom: 0;
+}
+
+.eq-card-actions {
+  width: 100%;
+  flex-direction: column;
+  align-items: stretch;
+  margin-top: auto;
+  gap: 10px;
+  padding-top: 16px;
+}
+
+.eq-card-actions .btn-details {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 18px;
+  flex: none;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.eq-product-info > .eq-tag {
+  max-width: 100%;
+  margin: 0;
+  white-space: normal;
+  line-height: 1.2;
+}
+
+.eq-product-info > .btn-add-cart {
+  width: 100%;
+  min-height: 44px;
+  margin-top: 0;
+  gap: 8px;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* MacBook / telas amplas compactas */
+@media (max-width: 1440px) {
+  .container {
+    max-width: 1180px;
+    padding-inline: 24px;
+  }
+
+  .header {
+    padding: 12px 0;
+  }
+
+  .nav > ul {
+    gap: 22px;
+  }
+
+  .hero {
+    padding: 130px 0 90px;
+  }
+
+  .slide-content {
+    padding: 44px;
+  }
+
+  .slide-text-area h2 {
+    font-size: 2.2rem;
+  }
+
+  .rental-features-box {
+    gap: 22px;
+    padding: 32px;
+  }
+
+  .eq-products-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .eq-product-card {
+    padding: 24px;
+  }
+
+  .eq-card-actions .btn-details,
+  .eq-product-info > .btn-add-cart {
+    min-height: 42px;
+  }
+}
+
+/* Notebook */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1080px;
+  }
+
+  .contact-header img,
+  .contact-header .btn-whats {
+    height: 50px !important;
+  }
+
+  .benefits-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+  }
+
+  .about-features-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .rental-features-box {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .footer-top {
+    grid-template-columns: 1.4fr 1fr 1fr;
+  }
+
+  .footer-col.cta-col {
+    grid-column: 1 / -1;
+  }
+
+  .footer-col:nth-child(3)::after,
+  .footer-col.cta-col::after {
+    display: none;
+  }
+
+  .laudos-grid {
+    gap: 3rem;
+  }
+
+  .eq-layout {
+    gap: 24px;
+  }
+
+  .eq-card-actions {
+    padding-top: 14px;
+  }
+
+  .eq-card-actions .btn-details,
+  .eq-product-info > .btn-add-cart {
+    min-height: 40px;
+  }
+}
+
+/* Tablet e notebook pequeno */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 100%;
+    padding-inline: 22px;
+  }
+
+  .header-container {
+    gap: 14px;
+  }
+
+  .logo img {
+    height: 54px !important;
+  }
+
+  .mobile-menu-btn {
+    display: inline-flex;
+    flex-shrink: 0;
+    z-index: 1002;
+  }
+
+  .contact-header {
+    margin-left: auto;
+  }
+
+  .nav {
+    position: fixed;
+    top: 78px;
+    right: 16px;
+    width: min(360px, calc(100vw - 32px));
+    max-height: calc(100vh - 96px);
+    overflow-y: auto;
+    padding: 18px;
+    background: #ffffff;
+    border: 1px solid var(--color-border);
+    border-radius: 14px;
+    box-shadow: 0 24px 70px rgba(15, 23, 42, 0.18);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-12px);
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+    z-index: 1001;
+  }
+
+  .nav.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .nav > ul {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+  }
+
+  .nav a {
+    width: 100%;
+    padding: 12px 10px;
+    border-radius: 8px;
+    justify-content: space-between;
+  }
+
+  .nav a::after {
+    display: none;
+  }
+
+  .dropdown {
+    padding: 0;
+  }
+
+  .dropdown-menu {
+    position: static;
+    display: flex;
+    min-width: 0;
+    padding: 4px 0 8px 10px;
+    border: 0;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  .dropdown-menu a {
+    padding: 9px 10px;
+    font-size: 0.88rem;
+    color: #4b5563;
+  }
+
+  .services-detailed {
+    height: auto !important;
+    min-height: 0;
+    padding: 110px 0 56px !important;
+    margin-top: 0;
+    align-items: stretch !important;
+    overflow: visible !important;
+  }
+
+  .services-detailed > .container,
+  .carousel-container {
+    height: auto !important;
+    max-height: none !important;
+  }
+
+  .carousel-slide.active {
+    flex-direction: column;
+    height: auto;
+    min-height: 0;
+  }
+
+  .slide-content,
+  .slide-image-area {
+    width: 100%;
+    flex: 0 0 auto;
+  }
+
+  .slide-content {
+    padding: 38px;
+    height: auto;
+    min-height: 0;
+    align-items: flex-start;
+  }
+
+  .slide-text-area {
+    max-width: 100%;
+  }
+
+  .slide-image-area {
+    height: 360px;
+    border-radius: 0 0 16px 16px;
+  }
+
+  .slide-image-area img {
+    border-radius: 0 0 16px 16px;
+  }
+
+  .floating-badge {
+    right: 24px;
+    bottom: 24px;
+  }
+
+  .product-carousel .product-card {
+    flex-basis: min(320px, calc(50vw - 40px));
+  }
+
+  .services-wrapper,
+  .about-top,
+  .rental-info-grid,
+  .laudos-grid,
+  .eq-detail-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .services-grid,
+  .services-detailed-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .rental-info-wrapper,
+  .eq-detail-layout {
+    padding: 32px;
+  }
+
+  .eq-detail-section {
+    padding: 110px 0 64px;
+  }
+
+  .eq-detail-image {
+    min-height: 320px;
+  }
+
+  .eq-detail-image img {
+    max-height: 310px;
+  }
+
+  .eq-layout {
+    flex-direction: column;
+  }
+
+  .eq-features-bar {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .eq-feature-item {
+    min-width: 190px;
+  }
+
+  .eq-bottom-cta,
+  .rental-cta-inline,
+  .cta-banner {
+    align-items: flex-start;
+  }
+
+  .eq-product-info {
+    gap: 11px;
+  }
+
+  .eq-card-actions .btn-details,
+  .eq-product-info > .btn-add-cart {
+    min-height: 40px;
+    padding-block: 9px;
+  }
+}
+
+/* Tablet vertical e celulares grandes */
+@media (max-width: 768px) {
+  .container {
+    padding-inline: 18px;
+  }
+
+  .header {
+    padding: 10px 0;
+  }
+
+  .logo img {
+    height: 48px !important;
+  }
+
+  .contact-header {
+    display: none;
+  }
+
+  .nav {
+    top: 68px;
+    right: 12px;
+    width: calc(100vw - 24px);
+    max-height: calc(100vh - 84px);
+  }
+
+  .section-header {
+    margin-bottom: 36px;
+  }
+
+  .section-header h2,
+  .eq-header h2,
+  .rental-header h2,
+  .laudos-info h2 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+
+  .services-detailed {
+    padding-top: 78px !important;
+  }
+
+  .eq-detail-section {
+    padding-top: 96px;
+  }
+
+  .carousel-slide {
+    border-radius: 12px;
+  }
+
+  .slide-content {
+    padding: 24px;
+  }
+
+  .slide-text-area h2 {
+    font-size: 1.75rem;
+    line-height: 1.18;
+    margin-bottom: 14px;
+  }
+
+  .slide-text-area .description {
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+  }
+
+  .slide-text-area .cta-banner {
+    display: inline-flex;
+    width: auto;
+    min-width: 0;
+    max-width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 14px;
+    border-radius: 999px;
+  }
+
+  .slide-text-area .cta-banner .cta-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 0;
+    border-radius: 999px;
+    font-size: 1rem;
+  }
+
+  .slide-text-area .cta-banner .cta-text {
+    flex: 0 0 auto;
+    font-size: 0.88rem;
+    line-height: 1;
+  }
+
+  .slide-text-area .cta-banner .cta-arrow {
+    font-size: 0.95rem;
+  }
+
+  .slide-header {
+    align-items: flex-start;
+    margin-bottom: 14px;
+  }
+
+  .slide-image-area {
+    height: 280px;
+  }
+
+  .floating-badge {
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    padding: 12px 14px;
+  }
+
+  .floating-badge i {
+    font-size: 1.4rem;
+  }
+
+  .carousel-controls {
+    gap: 16px;
+    margin-top: 18px;
+  }
+
+  .products,
+  .benefits,
+  .about-company,
+  .services-detailed,
+  .laudos-section {
+    padding-block: 56px;
+  }
+
+  .benefits-grid,
+  .services-grid,
+  .services-detailed-grid,
+  .about-features-grid,
+  .rental-info-grid,
+  .eq-products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-carousel .product-card {
+    height: 520px;
+    min-width: 260px;
+    flex-basis: min(280px, calc(100vw - 56px));
+    padding: 24px 20px;
+  }
+
+  .product-carousel .product-card h3 {
+    min-height: 4.6em;
+  }
+
+  .product-carousel .product-card p {
+    min-height: 9.8em;
+    -webkit-line-clamp: 7;
+  }
+
+  .product-card img {
+    height: 140px;
+  }
+
+  .benefit-item,
+  .feature-card {
+    align-items: flex-start;
+  }
+
+  .about-text h2 {
+    font-size: 1.75rem;
+  }
+
+  .rental-page {
+    padding-bottom: 64px;
+  }
+
+  .rental-features-box {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 24px;
+    gap: 20px;
+  }
+
+  .rental-info-wrapper,
+  .eq-bottom-info,
+  .eq-detail-layout {
+    padding: 24px;
+    border-radius: 12px;
+  }
+
+  .rental-cta-inline,
+  .rental-cta-inline .cta-inline-left,
+  .eq-bottom-cta,
+  .eq-bottom-cta .cta-left,
+  .cta-banner,
+  .cta-content {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .cta-icon {
+    margin-right: 0;
+  }
+
+  .rental-cta-inline .btn,
+  .btn-primary,
+  .btn-catalog,
+  .btn-specific-req {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-main {
+    padding-top: 56px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding-bottom: 42px;
+  }
+
+  .footer-col::after {
+    display: none !important;
+  }
+
+  .brand-col p,
+  .links-col ul li a {
+    max-width: none;
+    width: 100%;
+  }
+
+  .bottom-container,
+  .copyright,
+  .developer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .laudos-info .description,
+  .description {
+    max-width: 100%;
+  }
+
+  .features-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .accordion-header {
+    padding: 1rem;
+  }
+
+  .header-title {
+    align-items: flex-start;
+    line-height: 1.35;
+  }
+
+  .eq-section {
+    padding: 36px 0 56px;
+  }
+
+  .eq-breadcrumb {
+    flex-wrap: wrap;
+    row-gap: 6px;
+  }
+
+  .eq-features-bar {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 18px;
+  }
+
+  .eq-feature-item {
+    min-width: 0;
+    gap: 10px;
+  }
+
+  .eq-product-card {
+    padding: 22px;
+  }
+
+  .eq-product-image {
+    height: 210px;
+  }
+
+  .eq-card-actions {
+    margin-top: 8px;
+    padding-top: 14px;
+  }
+
+  .eq-card-actions .btn-details {
+    min-height: 38px;
+  }
+
+  .eq-product-info > .btn-add-cart {
+    min-height: 38px;
+  }
+
+  .eq-detail-info h2 {
+    font-size: 1.7rem;
+  }
+
+  .eq-detail-info .btn-add-cart {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .eq-cart-widget {
+    top: auto;
+    right: 16px;
+    bottom: 16px;
+  }
+
+  .eq-cart-panel {
+    top: auto;
+    right: 0;
+    bottom: 64px;
+    width: min(390px, calc(100vw - 32px));
+    max-height: calc(100vh - 120px);
+  }
+}
+
+/* Celular */
+@media (max-width: 576px) {
+  .container {
+    padding-inline: 16px;
+  }
+
+  .mobile-menu-btn {
+    width: 42px;
+    height: 42px;
+  }
+
+  .slide-content {
+    padding: 22px 20px;
+  }
+
+  .services-detailed {
+    padding-top: 72px !important;
+    padding-bottom: 38px !important;
+  }
+
+  .services-detailed .carousel-container {
+    height: 420px !important;
+    min-height: 420px;
+  }
+
+  .services-detailed .carousel-slide,
+  .services-detailed .carousel-slide.active {
+    height: 350px;
+    flex: 0 0 350px;
+  }
+
+  .services-detailed .slide-content {
+    height: 100%;
+  }
+
+  .slide-text-area h2,
+  .section-header h2,
+  .eq-header h2,
+  .rental-header h2,
+  .laudos-info h2 {
+    font-size: 1.55rem;
+  }
+
+  .slide-text-area h2,
+  .slide-text-area .description {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+  }
+
+  .slide-text-area h2 {
+    -webkit-line-clamp: 4;
+  }
+
+  .slide-text-area .description {
+    -webkit-line-clamp: 4;
+  }
+
+  .slide-image-area {
+    display: none;
+  }
+
+  .floating-badge {
+    position: static;
+    border-radius: 0;
+    border-bottom: 0;
+  }
+
+  .cta-banner {
+    padding: 18px;
+  }
+
+  .slide-text-area .cta-banner {
+    padding: 8px 12px;
+  }
+
+  .slide-text-area .cta-banner .cta-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .cta-icon {
+    margin-right: 0;
+  }
+
+  .product-card,
+  .benefit-item,
+  .feature-card,
+  .service-card-mini,
+  .rental-info-wrapper,
+  .eq-bottom-info,
+  .eq-detail-layout {
+    padding: 20px;
+  }
+
+  .product-carousel {
+    height: 536px;
+    padding: 8px 0;
+    contain: layout paint;
+  }
+
+  .product-track {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    height: 520px;
+  }
+
+  .product-group {
+    height: 100%;
+  }
+
+  .product-carousel .product-card {
+    height: 100%;
+  }
+
+  .section-footer {
+    justify-content: stretch;
+    margin-top: 28px;
+  }
+
+  .section-footer .btn-catalog {
+    width: 100%;
+  }
+
+  .rental-features-box,
+  .features-list,
+  .eq-features-bar {
+    grid-template-columns: 1fr;
+  }
+
+  .rental-feature {
+    text-align: left;
+    padding: 0;
+  }
+
+  .faq-question {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .faq-answer {
+    padding: 0 16px 16px;
+  }
+
+  .footer-logo {
+    align-items: flex-start;
+  }
+
+  .contact-info li {
+    align-items: flex-start;
+  }
+
+  .laudos-section {
+    padding: 32px 0 48px;
+  }
+
+  .image-wrapper img {
+    max-height: 260px;
+  }
+
+  .accordion-header {
+    gap: 12px;
+  }
+
+  .toggle-icon {
+    flex-shrink: 0;
+    margin-top: 4px;
+  }
+
+  .eq-product-image {
+    height: 180px;
+  }
+
+  .eq-card-actions {
+    flex-direction: column;
+  }
+
+  .eq-card-actions .btn-details,
+  .eq-product-info > .btn-add-cart {
+    width: 100%;
+    min-height: 40px;
+    justify-content: center;
+  }
+
+  .eq-detail-section {
+    padding: 88px 0 44px;
+  }
+
+  .eq-detail-image {
+    min-height: 230px;
+    padding: 20px;
+  }
+
+  .eq-detail-image img {
+    max-height: 220px;
+  }
+
+  .btn-manual {
+    align-items: flex-start;
+  }
+}
+
+/* Celular pequeno */
+@media (max-width: 420px) {
+  .container {
+    padding-inline: 14px;
+  }
+
+  .logo img {
+    height: 42px !important;
+  }
+
+  .nav {
+    top: 62px;
+  }
+
+  .eq-detail-section {
+    padding-top: 80px;
+  }
+
+  .slide-text-area h2,
+  .section-header h2,
+  .eq-header h2,
+  .rental-header h2,
+  .laudos-info h2,
+  .eq-detail-info h2 {
+    font-size: 1.35rem;
+  }
+
+  .slide-content,
+  .product-card,
+  .benefit-item,
+  .feature-card,
+  .rental-info-wrapper,
+  .eq-bottom-info,
+  .eq-detail-layout {
+    padding: 16px;
+  }
+
+  .carousel-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .eq-cart-widget {
+    right: 12px;
+    bottom: 12px;
+  }
+
+  .eq-cart-panel {
+    width: calc(100vw - 24px);
+    bottom: 60px;
+  }
+
+  .eq-cart-item-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .eq-cart-qty {
+    justify-content: space-between;
+  }
+}
