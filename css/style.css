@@ -1623,6 +1623,20 @@ body {
   font-size: 0.95rem;
 }
 
+.footer-main a[href^="tel"],
+.footer-main a[href^="tel"]:visited,
+.footer-main a[href^="tel"]:hover,
+.footer-main a[href^="tel"]:active,
+.footer-main a[x-apple-data-detectors],
+.contact-info a,
+.contact-info a:visited,
+.contact-info a:hover,
+.contact-info a:active,
+.contact-info a[x-apple-data-detectors] {
+  color: #d1d5db !important;
+  text-decoration: none !important;
+}
+
 .contact-info li .icon-box {
   display: flex;
   align-items: center;
