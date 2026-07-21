@@ -23,7 +23,7 @@ jobs:
       - name: Sincronizar arquivos via FTP
         uses: SamKirsch/ftp-deploy-action@v4.3.5
         with:
-          server: ${{ secrets.ftp.atomax.com.br }}
-          username: ${{ secrets.atomax1 }}
-          password: ${{ secrets.Milton@10101010 }}
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
           server-dir: /public_html/ # Ajuste a pasta destino da Locaweb (ex: /public_html/ ou /web/)
