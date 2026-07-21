@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const productGroup = productTrack?.querySelector('.product-group');
     const sourceProductCards = productGroup ? Array.from(productGroup.querySelectorAll('.product-card')) : [];
 
+    // Clonar sempre para a animação infinita funcionar
     if (productTrack && productGroup && sourceProductCards.length) {
         const cloneGroup = productGroup.cloneNode(true);
         cloneGroup.setAttribute('aria-hidden', 'true');
@@ -59,6 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 350);
         };
 
+        // Aplicar para desktop e mobile
         productCarousel.addEventListener('touchstart', pauseProductCarousel, { passive: true });
         productCarousel.addEventListener('touchmove', pauseProductCarousel, { passive: true });
         productCarousel.addEventListener('touchend', resumeProductCarousel, { passive: true });

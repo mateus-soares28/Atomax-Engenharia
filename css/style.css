@@ -93,7 +93,7 @@ body {
   letter-spacing: 1px;
 }
 
-.nav>ul {
+.nav > ul {
   display: flex;
   list-style: none;
   gap: 32px;
@@ -591,7 +591,7 @@ body {
   align-items: stretch;
   gap: 24px;
   width: max-content;
-  animation: product-scroll 42s linear infinite;
+  animation: product-scroll 30s linear infinite;
   will-change: transform;
   touch-action: pan-y pinch-zoom;
 }
@@ -977,7 +977,7 @@ body {
 }
 
 .services-detailed {
- margin-top: 50px;
+  margin-top: 50px;
   padding: 80px 0;
   background-color: var(--color-bg-light);
   overflow: hidden;
@@ -2059,7 +2059,6 @@ body {
   transform: scale(0.98);
 }
 
-
 /* --- Carrinho de Solicitacao --- */
 .eq-cart-widget {
   position: fixed;
@@ -2589,7 +2588,6 @@ body {
   transform: translateY(-2px);
 }
 
-
 /* --- Dropdowns dos Cards (UI/UX) --- */
 .eq-card-dropdowns {
   margin: 15px 0;
@@ -2678,7 +2676,10 @@ body {
   text-decoration: none;
   font-weight: 600;
   font-size: 0.9rem;
-  transition: color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .btn-manual:hover {
@@ -2777,7 +2778,6 @@ body {
   padding: 9px 16px; /* Deixa um pouco mais encorpado */
 }
 
-
 /* =========================================
    PÃGINA ÃšNICA DE DETALHES (detalhe-equipamento.html)
    ========================================= */
@@ -2817,7 +2817,9 @@ body {
   max-width: 100%;
   max-height: 400px;
   object-fit: contain;
-  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.05)); /* DÃ¡ profundidade ao PNG/WebP */
+  filter: drop-shadow(
+    0 10px 15px rgba(0, 0, 0, 0.05)
+  ); /* DÃ¡ profundidade ao PNG/WebP */
 }
 
 /* Ãrea de InformaÃ§Ãµes */
@@ -2878,4 +2880,3 @@ body {
   height: 100%;
   object-fit: contain;
 }
-

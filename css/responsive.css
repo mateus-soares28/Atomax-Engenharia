@@ -883,12 +883,12 @@ body.menu-open {
   .product-carousel {
     height: auto;
     margin-inline: -16px;
-    padding: 4px 16px 8px;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    contain: content;
-    scroll-snap-type: none;
-    -webkit-overflow-scrolling: touch;
+    padding: 8px 16px 12px;
+    overflow: hidden;
+    position: relative;
+    touch-action: pan-y pinch-zoom;
+    -webkit-user-select: none;
+    user-select: none;
   }
 
   .product-carousel::before,
@@ -906,44 +906,64 @@ body.menu-open {
     left: auto;
     width: max-content;
     height: auto;
-    gap: 14px;
-    animation: product-scroll-mobile 30s linear infinite !important;
+    gap: 16px;
+    animation: product-scroll-mobile 40s linear infinite;
+    will-change: transform;
+    display: flex;
+    align-items: stretch;
+    padding: 0;
+  }
+
+  .product-carousel.is-touching .product-track {
+    animation-play-state: paused !important;
   }
 
   .product-group {
     height: auto;
-    gap: 14px;
+    gap: 16px;
+    display: flex;
+    align-items: stretch;
+    flex-shrink: 0;
   }
 
   .product-carousel .product-card {
-    flex: 0 0 clamp(246px, 76vw, 288px);
+    flex: 0 0 clamp(260px, 80vw, 300px);
     min-width: 0;
     max-width: none;
-    height: 440px;
-    padding: 20px 18px;
-    scroll-snap-align: start;
+    height: auto;
+    min-height: 460px;
+    padding: 22px 20px;
+    -webkit-user-drag: none;
+    user-select: none;
+    pointer-events: auto;
+    cursor: pointer;
   }
 
   .product-carousel .product-card img {
-    height: 118px;
-    margin-bottom: 16px;
+    height: 140px;
+    margin-bottom: 18px;
+    object-fit: contain;
   }
 
   .product-carousel .product-card h3 {
-    font-size: 1rem;
-    min-height: 4.4em;
-    margin-bottom: 10px;
+    font-size: 0.95rem;
+    min-height: auto;
+    margin-bottom: 12px;
+    line-height: 1.3;
   }
 
   .product-carousel .product-card p {
     flex: 1 1 auto;
     min-height: 0;
-    margin-bottom: 18px;
-    -webkit-line-clamp: 6;
+    margin-bottom: 16px;
+    -webkit-line-clamp: 5;
+    font-size: 0.9rem;
+    line-height: 1.4;
   }
 
   .product-carousel .product-card .link-more {
     margin-top: auto;
+    font-size: 0.9rem;
   }
 
   .floating-whatsapp-btn {
@@ -959,7 +979,7 @@ body.menu-open {
     }
 
     to {
-      transform: translateX(calc(-50% - 7px));
+      transform: translateX(calc(-50% - 8px));
     }
   }
 
